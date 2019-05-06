@@ -1,0 +1,32 @@
+PODS:
+  - FlexibleDiff (0.0.8)
+  - ReactiveCocoa (10.0.0):
+    - ReactiveSwift (~> 6.0)
+  - ReactiveDataSource (0.0.1):
+    - FlexibleDiff
+    - ReactiveCocoa (~> 10.0)
+    - ReactiveSwift (~> 6.0)
+  - ReactiveSwift (6.0.0)
+
+DEPENDENCIES:
+  - ReactiveDataSource (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FlexibleDiff
+    - ReactiveCocoa
+    - ReactiveSwift
+
+EXTERNAL SOURCES:
+  ReactiveDataSource:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FlexibleDiff: 4f487778bd152088a9528a0a9be06eba7952bb00
+  ReactiveCocoa: 6d4c37ba236f5d9a7a55b2172cd09f19ba85f574
+  ReactiveDataSource: 8c013c8deb28d7277e97a833023c4b98b1a85797
+  ReactiveSwift: 24b7ed245617bbfd30ee0c87779b6c64ac1b4518
+
+PODFILE CHECKSUM: 52bfd37f18f11ecd06efadb5eefba42de7c17c65
+
+COCOAPODS: 1.6.0

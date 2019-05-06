@@ -1,0 +1,46 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireNetworkActivityIndicator (2.4.0):
+    - Alamofire (~> 4.8)
+  - FlexibleDiff (0.0.8)
+  - Kingfisher (5.4.0)
+  - Nimble (8.0.1)
+  - ReactiveCocoa (10.0.0):
+    - ReactiveSwift (~> 6.0)
+  - ReactiveSwift (6.0.0)
+  - SkeletonView (1.5)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8)
+  - AlamofireNetworkActivityIndicator (~> 2.4)
+  - FlexibleDiff
+  - Kingfisher
+  - Nimble (~> 8.0)
+  - ReactiveCocoa (~> 10.0)
+  - ReactiveSwift
+  - SkeletonView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - FlexibleDiff
+    - Kingfisher
+    - Nimble
+    - ReactiveCocoa
+    - ReactiveSwift
+    - SkeletonView
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  FlexibleDiff: 4f487778bd152088a9528a0a9be06eba7952bb00
+  Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  ReactiveCocoa: 6d4c37ba236f5d9a7a55b2172cd09f19ba85f574
+  ReactiveSwift: 24b7ed245617bbfd30ee0c87779b6c64ac1b4518
+  SkeletonView: 6cbb80f82f8bdee3f9093e2fa03b84819b4bd826
+
+PODFILE CHECKSUM: 58a1c704d24b445348a1f0a059699047e0b52c16
+
+COCOAPODS: 1.6.0

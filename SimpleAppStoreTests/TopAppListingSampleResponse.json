@@ -1,0 +1,851 @@
+{
+    "feed": {
+        "author": {
+            "name": {
+                "label": "iTunes Store"
+            },
+            "uri": {
+                "label": "http://www.apple.com/itunes/"
+            }
+        },
+        "entry": [
+            {
+                "im:name": {
+                    "label": "封神录-传承经典策略仙侠"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "巅峰争霸FIGHTING，你就是世界的神，强化你的阵容，排列你的阵形，诸神最高领域,只求巅峰一战，巅峰是给王者的唯一荣耀，我的世界唯我做主!!\n\n【游戏特色】\n\n1.神的规则由我改写!!\n穿越时空裂痕，时空行者来到一个神秘错置的国度。\n在这裡神魔横行，干扰人世！\n在这裡弑神戮魔，由你决定！\n\n2.百种角色应援!! 颠覆你所有想像\n百种角色，各自成神\n科技突破，颠覆传统\n组合最强队伍，成为新世界的神"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© LIBO WANG"
+                },
+                "title": {
+                    "label": "封神录-传承经典策略仙侠 - JITAO CHEN"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E5%B0%81%E7%A5%9E%E5%BD%95-%E4%BC%A0%E6%89%BF%E7%BB%8F%E5%85%B8%E7%AD%96%E7%95%A5%E4%BB%99%E4%BE%A0/id1434807705?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E5%B0%81%E7%A5%9E%E5%BD%95-%E4%BC%A0%E6%89%BF%E7%BB%8F%E5%85%B8%E7%AD%96%E7%95%A5%E4%BB%99%E4%BE%A0/id1434807705?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1434807705",
+                        "im:bundleId": "com.fsl.jian"
+                    }
+                },
+                "im:artist": {
+                    "label": "JITAO CHEN"
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2018-11-13T07:08:28-07:00",
+                    "attributes": {
+                        "label": "2018年11月13日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "樱之剑魂 - 和风刀剑本格之作"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/12/5e/c6/125ec640-89d1-e49d-9476-59bf5cae4fe2/AppIcon-1x_U007emarketing-85-220-9.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/12/5e/c6/125ec640-89d1-e49d-9476-59bf5cae4fe2/AppIcon-1x_U007emarketing-85-220-9.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple125/v4/12/5e/c6/125ec640-89d1-e49d-9476-59bf5cae4fe2/AppIcon-1x_U007emarketing-85-220-9.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "【超人气娘化题材，刀剑历史复兴】\n历史名刀化身刀剑萌娘，奔赴战场，守护历史。\n深度考究的对话剧情，通过角色台词和性格表现出的世界背景引人入胜 >_<\n\n【极致角色人设，唯美精致和风】\n数十位特征鲜明性格迥异的刀剑萌娘登场。\n唯美日式风情，精致和风画面。\n众多一线画师精心绘制海量立绘，更有丰富精美的羁绊等你收集  =。=\n\n【豪华声优阵容，演绎视听盛宴】\n日本豪华声优阵容倾情演绎。\n角色台词彰显个性，声控福利不容错过 (￣▽￣*)\n\n【轻松休闲玩法，随心玩转掌指】\n简单操作，轻松上手，最有爱的游戏体验。\n丰富多彩的日常剧情，在战斗之外还能体验到与刀剑们朝夕相处的真实感"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© Qin Ye"
+                },
+                "title": {
+                    "label": "樱之剑魂 - 和风刀剑本格之作 - CHONGQING CAI"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E6%A8%B1%E4%B9%8B%E5%89%91%E9%AD%82-%E5%92%8C%E9%A3%8E%E5%88%80%E5%89%91%E6%9C%AC%E6%A0%BC%E4%B9%8B%E4%BD%9C/id1355623908?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E6%A8%B1%E4%B9%8B%E5%89%91%E9%AD%82-%E5%92%8C%E9%A3%8E%E5%88%80%E5%89%91%E6%9C%AC%E6%A0%BC%E4%B9%8B%E4%BD%9C/id1355623908?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1355623908",
+                        "im:bundleId": "com.sakura.swordsoul"
+                    }
+                },
+                "im:artist": {
+                    "label": "CHONGQING CAI",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/chongqing-cai/id1441403651?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2019-01-25T00:24:04-07:00",
+                    "attributes": {
+                        "label": "2019年01月25日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "萌萌戰爭：冒險之旅"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/d6/78/2dd6788f-48ba-9855-0ac0-7a522fdf79c6/AppIcon-0-1x_U007emarketing-0-85-220-0-10.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/d6/78/2dd6788f-48ba-9855-0ac0-7a522fdf79c6/AppIcon-0-1x_U007emarketing-0-85-220-0-10.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/d6/78/2dd6788f-48ba-9855-0ac0-7a522fdf79c6/AppIcon-0-1x_U007emarketing-0-85-220-0-10.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "《萌萌戰爭》——全球首發全新英雄大合集放置類手遊，Q萌二次元畫風英雄，伴妳暢遊神秘大陸！Q萌的界面，豐富的養成體系、輕松休閑的玩法，細膩的畫面，輕快的音樂，刺激的戰鬥，華麗的進階，酷炫的武器，神秘的副本...輕松休閑的玩法，豐富多彩的劇情，豐厚的獎勵。還在等什麽？現在就加入遊戲與神秘大陸的英雄們壹起冒險，壹起成長吧！\n\n********************\n官方網站：http://mmzz.sxl.cn/\n聯繫客服：swfe0s@163.com"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© Zhuhai Tianhua Network Technology Co., Ltd."
+                },
+                "title": {
+                    "label": "萌萌戰爭：冒險之旅 - Zhuhai Tianhua Network Technology Co., Ltd."
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E8%90%8C%E8%90%8C%E6%88%B0%E7%88%AD-%E5%86%92%E9%9A%AA%E4%B9%8B%E6%97%85/id1459074261?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E8%90%8C%E8%90%8C%E6%88%B0%E7%88%AD-%E5%86%92%E9%9A%AA%E4%B9%8B%E6%97%85/id1459074261?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1459074261",
+                        "im:bundleId": "com.thyx.mmzz"
+                    }
+                },
+                "im:artist": {
+                    "label": "Zhuhai Tianhua Network Technology Co., Ltd.",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/zhuhai-tianhua-network-technology-co-ltd/id1446422790?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2019-04-23T12:36:26-07:00",
+                    "attributes": {
+                        "label": "2019年04月23日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "主公等等我-經典三國卡牌策略遊戲"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/17/0d/34/170d3480-dc00-d72b-704d-6fb87108de88/AppIcon-0-1x_U007emarketing-0-85-220-9.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is5-ssl.mzstatic.com/image/thumb/Purple114/v4/17/0d/34/170d3480-dc00-d72b-704d-6fb87108de88/AppIcon-0-1x_U007emarketing-0-85-220-9.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple114/v4/17/0d/34/170d3480-dc00-d72b-704d-6fb87108de88/AppIcon-0-1x_U007emarketing-0-85-220-9.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "《主公等等我》是一款以東漢末年諸侯爭霸為背景，以卡通萌趣畫風來呈現的一款經典卡牌類策略回合手遊。\n【3D視角 自由操控】\n遊戲內戰鬥場景採用3D視角，讓你在戰鬥的同時可以全方位實時觀測到整個戰場的瞬息變化。\n【唯美畫風 完美音效】\n眾多特色關卡以及場景都採用了中國山水畫風的特色并結合了當今流行的遊戲元素來致力呈現給玩家。電影級音效更是讓玩家在戰鬥與冒險的過程中猶如身臨其境，真正享受到遊戲的緊張刺激與熱血澎湃。\n【排兵佈陣 神將養成】\n半回合制遊戲模式可以讓玩家在面對對手時可以隨心所欲的自由搭配專屬陣容來進行戰鬥，在武將養成界面也可以優先選擇自己鐘愛的神將來培養。\n【建築升級 軍團爭霸】\n王宮和書院等可以通過主動升級來獲得更高的獎勵，還可以派出守將進行守衛。多種爭霸模式讓玩家切身體會在硝煙四起諸侯爭霸時的塔防樂趣。\n遊戲特色:\n1.超級神將系統，千軍易求一將難得的局面將不再存在。\n2.獨創6V6半回合制戰鬥玩法，讓陣容搭配充滿變化。\n3.超級寵物系統降臨，神獸助陣萌寵助戰讓遊戲充滿趣味快樂。\n4.情緣相親系統，讓玩家在遊戲中可以江山與美人同時擁有。\n5.城主爭奪戰，體驗血與火的激情爭鋒！\n6.工會戰，體驗兄弟齊心其利斷金的沙場豪邁。"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© 主公等等我-經典三國卡牌策略遊戲"
+                },
+                "title": {
+                    "label": "主公等等我-經典三國卡牌策略遊戲 - dan hu"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E4%B8%BB%E5%85%AC%E7%AD%89%E7%AD%89%E6%88%91-%E7%B6%93%E5%85%B8%E4%B8%89%E5%9C%8B%E5%8D%A1%E7%89%8C%E7%AD%96%E7%95%A5%E9%81%8A%E6%88%B2/id1449674154?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E4%B8%BB%E5%85%AC%E7%AD%89%E7%AD%89%E6%88%91-%E7%B6%93%E5%85%B8%E4%B8%89%E5%9C%8B%E5%8D%A1%E7%89%8C%E7%AD%96%E7%95%A5%E9%81%8A%E6%88%B2/id1449674154?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1449674154",
+                        "im:bundleId": "com.zhugddw"
+                    }
+                },
+                "im:artist": {
+                    "label": "dan hu",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/dan-hu/id1449674153?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2019-02-15T10:08:33-07:00",
+                    "attributes": {
+                        "label": "2019年02月15日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "開言英語 - 地道英語流利說"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/77/86/15/77861534-579c-2dd1-281a-04f5aa66f1d8/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/77/86/15/77861534-579c-2dd1-281a-04f5aa66f1d8/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/77/86/15/77861534-579c-2dd1-281a-04f5aa66f1d8/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "認真學英語也能很享受！\n「開言英語」是OpenLanguage特別為中國用戶設計的英語學習APP。\n你能在這裡學習所有OpenLanguage製作的優質英語課程；也能收聽超人氣英語學習節目「潘吉Jenny告訴你」及升級版附加內容。\n\n更多課程優惠及活動請關注我們的微信公眾號：開言英語\n\n功能介紹：\n• 6個級別，1000多節職場、生活、文化主題口語課，並每週發布新課。\n• 課程採用場景對話模式，學工作、生活中馬上能用的口語。\n• 每課對話搭配外教講解音頻，如同身臨其境和外教上課。\n• 講解輕鬆、生動、到位，學習最純正、地道的表達方式。\n• 所有課程配有延伸學習內容，包括詞彙、例句、語法、文化版塊。\n• 所有文字內容搭配原版英語錄音、中英文文本、音標，理解更透徹、發音更標準。\n• 收藏適合你級別、興趣的課程和單詞，學你最感興趣的內容。\n• 收聽熱門節目「潘吉Jenny告訴你」及升級版附加內容。\n\n使用細則：\n• 我們為您提供了免費課程包和每週更新的脫口秀節目，您可以自由體驗。\n• 您可以使用同一帳戶在iPhone, iPad上學習課程。\n• 我們提供12個月時長的訂閱包。購買後您在帳戶有效期內可以學習所選語種所有的課程，以及每週更新的課程。不限級別、不限學習次數。\n\n使用條款、隱私條款請見https://m.openlanguage.com/m/private/"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© 2015 OpenLanguage Ltd"
+                },
+                "title": {
+                    "label": "開言英語 - 地道英語流利說 - Beijing Diandiankankan Technology Co.,Ltd."
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E9%96%8B%E8%A8%80%E8%8B%B1%E8%AA%9E-%E5%9C%B0%E9%81%93%E8%8B%B1%E8%AA%9E%E6%B5%81%E5%88%A9%E8%AA%AA/id995158649?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E9%96%8B%E8%A8%80%E8%8B%B1%E8%AA%9E-%E5%9C%B0%E9%81%93%E8%8B%B1%E8%AA%9E%E6%B5%81%E5%88%A9%E8%AA%AA/id995158649?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "995158649",
+                        "im:bundleId": "com.openlanguage.kaiyan"
+                    }
+                },
+                "im:artist": {
+                    "label": "Beijing Diandiankankan Technology Co.,Ltd.",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/beijing-diandiankankan-technology-co-ltd/id1433383893?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6017",
+                        "term": "Education",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E6%95%99%E8%82%B2/id6017?mt=8&uo=2",
+                        "label": "教育"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2015-09-10T20:03:27-07:00",
+                    "attributes": {
+                        "label": "2015年09月10日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "AlipayHK (支付寶香港)"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/4b/ca/74/4bca7443-c6fc-c256-505b-393a98d96b36/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/4b/ca/74/4bca7443-c6fc-c256-505b-393a98d96b36/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/4b/ca/74/4bca7443-c6fc-c256-505b-393a98d96b36/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "AlipayHK 為香港用戶提供完善及安全的流動支付方案:\n\n1. 無現金付款：多家商戶門市支援AlipayHK 付款 (請參考App內商戶列表)，用戶可選擇港幣信用卡或港幣餘額付款\n\n2. 提供QR Code轉賬收款以及AA收款功能，用戶之間面對面快速轉賬更為方便\n\n3. 網購/電子平台合作：可於各大合作平台進行網購付款，快捷安全\n\n4. 可於便利店或網上銀行、或使用港幣信用卡增值餘額，不同的支付方式讓您更方便更放心\n\n5. AlipayHK 提供途徑讓淘寶及支付寶中國的香港註冊用戶享受簡易登入、港幣支付服務，讓您管理賬戶更為方便\n\n\nAlipayHK 致力提供最安全的流動支付方案，並不斷提升服務質素迎合市場及用戶的需要，更多功能及詳情，請瀏覽網站：www.alipay.hk\n\n香港儲值支付工具牌照號碼：SVF0004"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© 2017 Alipay.hk Co.,Ltd"
+                },
+                "title": {
+                    "label": "AlipayHK (支付寶香港) - Alipay Payment Services (HK) Limited"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/alipayhk-%E6%94%AF%E4%BB%98%E5%AF%B6%E9%A6%99%E6%B8%AF/id1210638245?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/alipayhk-%E6%94%AF%E4%BB%98%E5%AF%B6%E9%A6%99%E6%B8%AF/id1210638245?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1210638245",
+                        "im:bundleId": "com.alipay.wallethk"
+                    }
+                },
+                "im:artist": {
+                    "label": "Alipay Payment Services (HK) Limited",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/alipay-payment-services-hk-limited/id1434654038?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6015",
+                        "term": "Finance",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E7%90%86%E8%B2%A1/id6015?mt=8&uo=2",
+                        "label": "理財"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2017-05-24T05:41:41-07:00",
+                    "attributes": {
+                        "label": "2017年05月24日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "BoC Pay"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/77/72/de/7772debc-4052-35c8-e35b-4c6a51c3dc4e/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/77/72/de/7772debc-4052-35c8-e35b-4c6a51c3dc4e/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/77/72/de/7772debc-4052-35c8-e35b-4c6a51c3dc4e/AppIcon-0-1x_U007emarketing-0-0-85-220-0-10.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "中銀香港移動支付手機應用程式BoC Pay，俾你一個生活、休閒、消費全方位移動支付嘅新體驗。\n- 快速完成付款: 一經綁定中銀銀聯雙幣信用卡或中銀香港銀行賬戶，衣食住行，去到邊，畀到邊\n-  兩地暢行: 掃一掃QR code，内地、香港都通行無阻；無論喺內地搭的士定購物畀錢都咁方便\n-  支援「轉數快」：可以向已經登記嘅電話號碼或電郵地址進行跨行轉賬，仲可以進行二維碼即時收款，方便快捷精彩著數獎賞: 開戶迎新獎賞、賺取優惠、各種精彩商戶優惠，盡在BoC Pay\n- 安全、安心、可靠: 銀行級應用保障，俾你十足信心\n如果你喺中銀香港提款卡或銀聯雙幣信用卡嘅持卡人，或者您已經註冊咗中銀香港網上銀行/手機銀行，可立即註冊本應用程式，立即享用移動支付服務。如果您仲未持有本行相關戶口，請親臨我哋任何一家分行申請辦理。"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "COPYRIGHT© Bank Of China (Hong Kong) Limited"
+                },
+                "title": {
+                    "label": "BoC Pay - Bank of China (Hong Kong) Limited"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/boc-pay/id1403690384?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/boc-pay/id1403690384?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1403690384",
+                        "im:bundleId": "com.bochk.ewallet"
+                    }
+                },
+                "im:artist": {
+                    "label": "Bank of China (Hong Kong) Limited",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/bank-of-china-hong-kong-limited/id385731636?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6015",
+                        "term": "Finance",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E7%90%86%E8%B2%A1/id6015?mt=8&uo=2",
+                        "label": "理財"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2018-07-30T11:06:04-07:00",
+                    "attributes": {
+                        "label": "2018年07月30日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "Disney Tsum Tsum Land"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/96/27/20/96272093-3313-b97a-d6a8-8e3e9d7a3f88/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/96/27/20/96272093-3313-b97a-d6a8-8e3e9d7a3f88/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/96/27/20/96272093-3313-b97a-d6a8-8e3e9d7a3f88/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-6.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "以Disney Tsum Tsum為世界觀打造的系列手遊新作《Disney Tsum Tsum Land》，玩家可以在此盡情遊玩各種主題泡泡關卡，利用Q萌可愛的Tsum Tsum和道具泡泡，爽快彈射連鎖COMBO，輕鬆打出高分通關！\n\n【遊戲簡介】\n◆ 饒富主題樂園氣氛的關卡場景\n精心設計原汁原味的迪士尼主題樂園氣氛，除了各區「米奇公館」、「幽靈公館」、「巨雷山」及「小小世界」等地圖關卡，遊戲中也會有超過120種搭配主題風格造型的Tsum Tsum登場喔！\n◆ 彷彿置身樂園大街的夜間花車大遊行\n遊戲中打造了宛如置身樂園大街的商店模式，邀請來自各地不同好友一起欣賞超級華麗的夜間花車大遊行，樂園大街中許多隱藏的彩蛋小遊戲等你發掘唷！\n◆ Tsum Tsum角色AR拍照日記\n遊戲內建AR拍照功能，還可以發揮創意在現實場景中和你最愛的Tsum Tsum角色一起賣萌合照，留下各種有趣影像吧！\n\n【遊戲玩法】\n◆ 彈射泡泡連線消除和機會彩球玩法\n◆ 好友同樂活動比拚\n衝高積分的賽車競賽、爬塔闖關贏得挑戰獎勵，還有許多有趣的期間限定挑戰活動等你來玩！"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "©Disney. Published by WeGames Corporation"
+                },
+                "title": {
+                    "label": "Disney Tsum Tsum Land - WINKING DIGITAL ENTERTAINMENT LIMITED"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/disney-tsum-tsum-land/id1447465870?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/disney-tsum-tsum-land/id1447465870?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1447465870",
+                        "im:bundleId": "com.wegames.ttl.hk.ios"
+                    }
+                },
+                "im:artist": {
+                    "label": "WINKING DIGITAL ENTERTAINMENT LIMITED",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/winking-digital-entertainment-limited/id1016436927?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2019-04-14T23:39:07-07:00",
+                    "attributes": {
+                        "label": "2019年04月14日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "小红书 – 找到你想要的生活"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/72/69/37/72693738-d8bc-bcaf-35c1-44dc78981082/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/72/69/37/72693738-d8bc-bcaf-35c1-44dc78981082/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/72/69/37/72693738-d8bc-bcaf-35c1-44dc78981082/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "【小紅書APP】年輕人的生活方式平臺，在這裏發現美好、真實、多元的世界，標記吃穿玩樂買的生活日常。\n \n【明星達人】時髦精黃子韜、實在人張雨綺、養生達人景甜、造型師林允、酷女孩歐陽娜娜、國際超模Karlie Kloss、好萊塢名媛金·卡戴珊……在小紅書和偶像做鄰居，從不壹樣的筆記中看到人氣明星生活中的另壹面。\n \n【熱門話題】get 潮流生活方式，從大熱網綜#國風美少年，到遊戲戰場#農藥吃雞初體驗，從新奇驚艷的#牛奶辛拉面，到溫暖勵誌的#我的高考故事，熱門的話題活動都在小紅書！\n \n【美顏濾鏡】夢幻效果的美顏濾鏡相機，重新認識世界和妳。打開小紅書相機直接拍拍拍，擴展社交圈，讓妳的照片和短視頻成為全世界小紅薯們循環播放的存在吧！\n \n【標簽貼紙】海量標簽隨心標記，地點、品牌、話題涵蓋美食、旅行、娛樂、影視綜藝、時尚穿搭、護膚美妝的方方面面，隨時隨地標記生活；用可愛搞怪或奇特的貼紙裝飾，生活日常瞬間鮮活精彩！\n \n【全球好物】通過社區大數據，精挑細選年輕人最潮流、最好用、最新奇的熱門商品；聚集國內外或知名或小眾的品牌，帶妳找到全世界的好東西。\n \n快下載小紅書，和全世界好看有趣的年輕人壹起標記生活吧！"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© 行吟信息科技（上海）有限公司"
+                },
+                "title": {
+                    "label": "小红书 – 找到你想要的生活 - Xingin"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6-%E6%89%BE%E5%88%B0%E4%BD%A0%E6%83%B3%E8%A6%81%E7%9A%84%E7%94%9F%E6%B4%BB/id741292507?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E5%B0%8F%E7%BA%A2%E4%B9%A6-%E6%89%BE%E5%88%B0%E4%BD%A0%E6%83%B3%E8%A6%81%E7%9A%84%E7%94%9F%E6%B4%BB/id741292507?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "741292507",
+                        "im:bundleId": "com.xingin.discover"
+                    }
+                },
+                "im:artist": {
+                    "label": "Xingin",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/xingin/id708264912?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6005",
+                        "term": "Social Networking",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E7%A4%BE%E4%BA%A4/id6005?mt=8&uo=2",
+                        "label": "社交"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2013-12-04T16:31:23-07:00",
+                    "attributes": {
+                        "label": "2013年12月04日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "War of Lords-3D Warfare"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/ec/a2/cf/eca2cf72-c9df-dc3c-a9f1-60482a03b0cd/AppIcon-1x_U007emarketing-85-220-4.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/ec/a2/cf/eca2cf72-c9df-dc3c-a9f1-60482a03b0cd/AppIcon-1x_U007emarketing-85-220-4.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/ec/a2/cf/eca2cf72-c9df-dc3c-a9f1-60482a03b0cd/AppIcon-1x_U007emarketing-85-220-4.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "Are you ready for joining the war of lords? You will be the supreme ruler and master the destiny of your empire. More than 100 legendary generals are waiting for your summons. Recruit them and build up a powerful army! Ally with other players to destroy unstoppable enemies, conquer other kingdoms and slay epic monsters. Come to enjoy this game now!"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© War of Lords"
+                },
+                "title": {
+                    "label": "War of Lords-3D Warfare - YUXIN CHEN"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/war-of-lords-3d-warfare/id1447795738?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/war-of-lords-3d-warfare/id1447795738?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1447795738",
+                        "im:bundleId": "com.mhugh.lzyf"
+                    }
+                },
+                "im:artist": {
+                    "label": "YUXIN CHEN",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/yuxin-chen/id1447795737?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2019-01-11T18:40:43-07:00",
+                    "attributes": {
+                        "label": "2019年01月11日"
+                    }
+                }
+            }
+        ],
+        "updated": {
+            "label": "2019-05-08T06:30:17-07:00"
+        },
+        "rights": {
+            "label": "Copyright 2008 Apple Inc."
+        },
+        "title": {
+            "label": "iTunes Store：免費 App 排行"
+        },
+        "icon": {
+            "label": "http://itunes.apple.com/favicon.ico"
+        },
+        "link": [
+            {
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=hk&id=172314&popId=27"
+                }
+            },
+            {
+                "attributes": {
+                    "rel": "self",
+                    "href": "https://itunes.apple.com/hk/rss/topfreeapplications/limit=10/json"
+                }
+            }
+        ],
+        "id": {
+            "label": "https://itunes.apple.com/hk/rss/topfreeapplications/limit=10/json"
+        }
+    }
+}
