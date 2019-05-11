@@ -11,6 +11,7 @@ import ReactiveDataSource
 enum AppListItem {
     case list([AppCellViewModel])
     case item(AppCellViewModel)
+    case error(ErrorMessageCellViewModel)
 }
 
 extension AppListItem: Hashable {
@@ -20,6 +21,8 @@ extension AppListItem: Hashable {
             hasher.combine(appList)
         case .item(let app):
             hasher.combine(app)
+        case .error(let errorCellModel):
+            hasher.combine(errorCellModel)
         }
     }
 }

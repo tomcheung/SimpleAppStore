@@ -12,6 +12,8 @@
 		9C06FE522285CB6200BFA282 /* AppRecommendationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE512285CB6200BFA282 /* AppRecommendationTableViewCell.swift */; };
 		9C06FE562285E28300BFA282 /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE552285E28300BFA282 /* AppCollectionViewCell.swift */; };
 		9C06FE582285E2D500BFA282 /* AppReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE572285E2D500BFA282 /* AppReuseView.swift */; };
+		9C06FE5B2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE5A2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift */; };
+		9C06FE5D2286D4A500BFA282 /* ErrorMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE5C2286D4A500BFA282 /* ErrorMessageTableViewCell.swift */; };
 		9C1385E422830FC400CCEC93 /* SimpleAppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385E322830FC400CCEC93 /* SimpleAppStoreTests.swift */; };
 		9C1385EC2283115800CCEC93 /* TopAppListingSampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C1385EB2283115800CCEC93 /* TopAppListingSampleResponse.json */; };
 		9C1385EE2283118B00CCEC93 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385ED2283118B00CCEC93 /* APIClient.swift */; };
@@ -67,6 +69,8 @@
 		9C06FE512285CB6200BFA282 /* AppRecommendationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRecommendationTableViewCell.swift; sourceTree = "<group>"; };
 		9C06FE552285E28300BFA282 /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCollectionViewCell.swift; sourceTree = "<group>"; };
 		9C06FE572285E2D500BFA282 /* AppReuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReuseView.swift; sourceTree = "<group>"; };
+		9C06FE5A2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageCellViewModel.swift; sourceTree = "<group>"; };
+		9C06FE5C2286D4A500BFA282 /* ErrorMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageTableViewCell.swift; sourceTree = "<group>"; };
 		9C1385E122830FC400CCEC93 /* SimpleAppStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAppStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1385E322830FC400CCEC93 /* SimpleAppStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppStoreTests.swift; sourceTree = "<group>"; };
 		9C1385E522830FC400CCEC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				9C91315022807CAC00658D7E /* AppListSection.swift */,
 				9C47EE162281BF0D00FC98D9 /* AppListViewModel.swift */,
 				9C47EE182281C3E100FC98D9 /* AppCellViewModel.swift */,
+				9C06FE5A2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -226,6 +231,7 @@
 				9C06FE4F2285756F00BFA282 /* AppTableViewCell.swift */,
 				9C06FE552285E28300BFA282 /* AppCollectionViewCell.swift */,
 				9C06FE572285E2D500BFA282 /* AppReuseView.swift */,
+				9C06FE5C2286D4A500BFA282 /* ErrorMessageTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -462,6 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C06FE5B2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift in Sources */,
 				9C06FE522285CB6200BFA282 /* AppRecommendationTableViewCell.swift in Sources */,
 				9C1385F62283304100CCEC93 /* AppResponse.swift in Sources */,
 				9C47EE172281BF0D00FC98D9 /* AppListViewModel.swift in Sources */,
@@ -473,6 +480,7 @@
 				9C06FE562285E28300BFA282 /* AppCollectionViewCell.swift in Sources */,
 				9C47EE192281C3E100FC98D9 /* AppCellViewModel.swift in Sources */,
 				9C9131422280701A00658D7E /* AppstoreRepository.swift in Sources */,
+				9C06FE5D2286D4A500BFA282 /* ErrorMessageTableViewCell.swift in Sources */,
 				9C1385EE2283118B00CCEC93 /* APIClient.swift in Sources */,
 				9C06FE502285756F00BFA282 /* AppTableViewCell.swift in Sources */,
 				9C06FE582285E2D500BFA282 /* AppReuseView.swift in Sources */,
