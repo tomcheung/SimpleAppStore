@@ -32,3 +32,9 @@ struct AppCellViewModel: Hashable {
     }
     
 }
+
+extension AppCellViewModel: CustomStringConvertible {
+    var description: String {
+        return "AppCellViewModel(\(self.order): \(self.title) [\(self.subtitle)])"
+    }
+}

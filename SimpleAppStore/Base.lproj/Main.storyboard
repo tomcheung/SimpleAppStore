@@ -23,32 +23,32 @@
                                 <viewLayoutGuide key="safeArea" id="sBz-wu-4Pg"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VPr-3m-hqM">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="VPr-3m-hqM">
                                 <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="appListCell" rowHeight="170" id="0T1-FQ-cY3" customClass="AppRecommendationTableViewCell" customModule="SimpleAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="170"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="appListCell" rowHeight="220" id="0T1-FQ-cY3" customClass="AppRecommendationTableViewCell" customModule="SimpleAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="220"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0T1-FQ-cY3" id="wWU-r7-U6H">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="169.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="219.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vgU-pM-aHf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="896" height="169.5"/>
+                                                    <rect key="frame" x="0.0" y="60" width="414" height="159.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="quv-5U-Dve">
-                                                        <size key="itemSize" width="100" height="165"/>
+                                                        <size key="itemSize" width="100" height="160"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="appCell" id="5z7-Kr-XLr" customClass="AppCollectionViewCell" customModule="SimpleAppStore" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="2.5" width="100" height="165"/>
+                                                            <rect key="frame" x="0.0" y="-0.5" width="100" height="160"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="165"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="160"/>
                                                                 <autoresizingMask key="autoresizingMask"/>
                                                                 <subviews>
                                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-3C-Js7">
@@ -71,7 +71,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Category]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geo-pA-WFO">
-                                                                        <rect key="frame" x="8" y="138" width="84" height="14.5"/>
+                                                                        <rect key="frame" x="8" y="138" width="84" height="14"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -98,20 +98,28 @@
                                                         </collectionViewCell>
                                                     </cells>
                                                 </collectionView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推介" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BA-QW-dTl">
+                                                    <rect key="frame" x="16" y="16" width="51" height="30"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="7BA-QW-dTl" firstAttribute="leading" secondItem="wWU-r7-U6H" secondAttribute="leading" constant="16" id="0lz-t6-Fb0"/>
                                                 <constraint firstItem="vgU-pM-aHf" firstAttribute="leading" secondItem="wWU-r7-U6H" secondAttribute="leading" id="6gT-fF-UET"/>
                                                 <constraint firstAttribute="trailing" secondItem="vgU-pM-aHf" secondAttribute="trailing" id="CLD-og-2WZ"/>
                                                 <constraint firstAttribute="bottom" secondItem="vgU-pM-aHf" secondAttribute="bottom" id="IYI-TZ-Lqz"/>
-                                                <constraint firstItem="vgU-pM-aHf" firstAttribute="top" secondItem="wWU-r7-U6H" secondAttribute="top" id="dhv-Tp-EtL"/>
+                                                <constraint firstItem="vgU-pM-aHf" firstAttribute="top" secondItem="wWU-r7-U6H" secondAttribute="top" constant="60" id="dhv-Tp-EtL"/>
+                                                <constraint firstItem="7BA-QW-dTl" firstAttribute="top" secondItem="wWU-r7-U6H" secondAttribute="top" constant="16" id="lFq-up-sXJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="recommendationCollectionView" destination="vgU-pM-aHf" id="La1-t9-yDY"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="appCell" rowHeight="97" id="8co-QK-Iwn" customClass="AppTableViewCell" customModule="SimpleAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="198" width="414" height="97"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="appCell" rowHeight="97" id="8co-QK-Iwn" customClass="AppTableViewCell" customModule="SimpleAppStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="248" width="414" height="97"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8co-QK-Iwn" id="9jz-fQ-TvX">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
@@ -177,7 +185,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="errorMessage" textLabel="J3Y-fN-SiJ" rowHeight="88" style="IBUITableViewCellStyleDefault" id="DnD-ty-kiH" customClass="ErrorMessageTableViewCell" customModule="SimpleAppStore" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="295" width="414" height="88"/>
+                                        <rect key="frame" x="0.0" y="345" width="414" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DnD-ty-kiH" id="NwS-Z6-UL0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87.5"/>

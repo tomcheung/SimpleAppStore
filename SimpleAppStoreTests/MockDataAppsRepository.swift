@@ -19,11 +19,11 @@ class MockDataAppsRepository: AppsRepositoryProtocol {
         self.mockError = nil
     }
     
-    func getAppListing(count: Int) -> SignalProducer<AppEntityResponse, APIError> {
+    func getAppListing(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
         return SignalProducer(value: self.mockData).delay(0.3, on: QueueScheduler.main)
     }
     
-    func getAppRecommendation(count: Int) -> SignalProducer<AppEntityResponse, APIError> {
+    func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
         return SignalProducer(value: self.mockData).delay(0.3, on: QueueScheduler.main)
     }
 }

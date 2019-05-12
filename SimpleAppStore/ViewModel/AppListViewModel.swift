@@ -16,16 +16,18 @@ class AppListViewModel {
     let sections: Property<[AppListSection]>
     let serchKeyword: MutableProperty<String?> = MutableProperty<String?>(nil)
     let error: Signal<APIError?, Never>
+    let appListing: Property<[App]>
+    let appRecommdation: Property<[App]>
     
     // MARK: - Internal property
     private let sectionsInternal: MutableProperty<[AppListSection]>
     
     // MARK: - Actions
-    private let fetchAppListAction = Action { (appsRepository: AppsRepositoryProtocol) -> SignalProducer<AppEntityResponse, APIError> in
-        return appsRepository.getAppListing(count: 10)
+    private let fetchAppListAction = Action { (appsRepository: AppsRepositoryProtocol, offset: Int) -> SignalProducer<(AppEntityResponse, offset: Int), APIError> in
+        return appsRepository.getAppListing(count: 10, offset: offset).map { ($0, offset) }
     }
-    private let fetchAppRecommendationAction = Action { (appsRepository: AppsRepositoryProtocol) -> SignalProducer<AppEntityResponse, APIError> in
-        return appsRepository.getAppRecommendation(count: 10)
+    private let fetchAppRecommendationAction = Action { (appsRepository: AppsRepositoryProtocol, offset: Int) -> SignalProducer<(AppEntityResponse, offset: Int), APIError> in
+        return appsRepository.getAppRecommendation(count: 10, offset: offset).map { ($0, offset) }
     }
     
     // MARK: -
@@ -39,31 +41,36 @@ class AppListViewModel {
             responseSignal.map { _ in nil } // Only reset error state when both app list and app recommendation are return
         )
         
-        let appSkeletion = (1...10).map { AppCellViewModel.skeletion(order: $0) }
-        let skeletionSections = AppListViewModel.mapToSections(appRecommendation: appSkeletion, appsList: appSkeletion, keyword: nil)
-        self.sectionsInternal = MutableProperty<[AppListSection]>(skeletionSections)
+        self.sectionsInternal = MutableProperty<[AppListSection]>(AppListViewModel.skeletionSections())
         self.sections = Property(capturing: self.sectionsInternal)
         
-        let appListing = self.fetchAppListAction.values
-            .map { (response) -> [AppCellViewModel] in
-                return response.feed.entry.enumerated().map { (index, app) in
-                    AppCellViewModel(app: app, order: index + 1)
-                }
-            }
-
-        let appRecommendation = self.fetchAppRecommendationAction.values
-            .map { (response) -> [AppCellViewModel] in
-                return response.feed.entry.map { AppCellViewModel(app: $0, order: 0) } // App Recommendation do not require display order
-            }
+        self.appListing = Property(initial: [], then: self.fetchAppListAction.values.scan([], AppListViewModel.scanFetchedResult))
+        self.appRecommdation = Property(initial: [], then: self.fetchAppRecommendationAction.values.scan([], AppListViewModel.scanFetchedResult))
         
-        self.sectionsInternal <~ SignalProducer.combineLatest(appRecommendation, appListing, self.serchKeyword.producer)
+        self.sectionsInternal <~ SignalProducer.combineLatest(self.appRecommdation.signal, self.appListing.signal, self.serchKeyword.producer)
             .map(AppListViewModel.mapToSections)
     }
     
     // MARK: - Public method
     func fetchAppList() {
-        self.fetchAppListAction.apply(self.appsRepository).start()
-        self.fetchAppRecommendationAction.apply(self.appsRepository).start()
+        self.fetchAppListAction.apply((self.appsRepository, offset: 0)).start()
+        self.fetchAppRecommendationAction.apply((self.appsRepository, offset: 0)).start()
+    }
+    
+    func fetchNextPage() {
+        if self.fetchAppListAction.isExecuting.value {
+            return
+        }
+        self.fetchAppListAction.apply((self.appsRepository, offset: self.appListing.value.count - 1)).start()
+    }
+    
+    private static func scanFetchedResult(lastResult: [App], result: (AppEntityResponse, offset: Int)) -> [App] {
+        let (response, offset) = result
+        if offset == 0 {
+            return response.feed.entry
+        } else {
+            return lastResult + response.feed.entry
+        }
     }
     
     static func filterResult(appViewModels: [AppCellViewModel], keyword: String?) -> [AppCellViewModel] {
@@ -77,16 +84,34 @@ class AppListViewModel {
         }
     }
     
-    static func mapAppToViewModel(_ apps: [App]) -> [AppCellViewModel] {
+    // MARK: - Helper function
+    private static func mapAppToViewModel(_ apps: [App]) -> [AppCellViewModel] {
         return apps.enumerated().map { (index, app) in
             AppCellViewModel(app: app, order: index + 1)
         }
     }
     
-    static func mapToSections(appRecommendation: [AppCellViewModel], appsList: [AppCellViewModel], keyword: String?) -> [AppListSection] {
-        let filteredAppRecommendation = AppListViewModel.filterResult(appViewModels: appRecommendation, keyword: keyword)
-        let filteredAppsList = AppListViewModel.filterResult(appViewModels: appsList, keyword: keyword)
+    private static func skeletionSections() -> [AppListSection] {
+        let appSkeletion = (1...10).map { AppCellViewModel.skeletion(order: $0) }
         
+        return [
+            AppListSection(
+                sectionIdentifier: "recommendationSkeletion",
+                items: [AppListItem.list(appSkeletion)],
+                headerItem: "Recommendation"
+            ),
+            AppListSection(
+                sectionIdentifier: "listingSkeletion",
+                items: appSkeletion.map { AppListItem.item($0) },
+                headerItem: nil
+            )
+        ]
+    }
+    
+    private static func mapToSections(appRecommendation: [App], appsList: [App], keyword: String?) -> [AppListSection] {
+        let filteredAppRecommendation = AppListViewModel.filterResult(appViewModels: AppListViewModel.mapAppToViewModel(appRecommendation), keyword: keyword)
+        let filteredAppsList = AppListViewModel.filterResult(appViewModels: AppListViewModel.mapAppToViewModel(appsList), keyword: keyword)
+
         let appRecommendationListItem: [AppListItem] = filteredAppRecommendation.isEmpty
             ? [AppListItem.message(
                 ErrorMessageCellViewModel(errorMessage: (keyword == nil) ? "No Result" : "No serach result on app recommendation",
@@ -94,12 +119,17 @@ class AppListViewModel {
               ]
             : [AppListItem.list(filteredAppRecommendation)]
         
-        let appListItem: [AppListItem] = filteredAppsList.isEmpty
+        var appListItem: [AppListItem] = filteredAppsList.isEmpty
             ? [AppListItem.message(
                 ErrorMessageCellViewModel(errorMessage: (keyword == nil) ? "No Result" : "No serach result on app listing",
                                           cellHeight: AppListViewController.Style.appListingRowHeight))
               ]
             : filteredAppsList.map { AppListItem.item($0) }
+        
+        if keyword == nil {
+            // Last item loading indicator
+            appListItem.append(AppListItem.item(AppCellViewModel.skeletion(order: appListItem.count + 1)))
+        }
         
         return [
             AppListSection(

@@ -22,11 +22,11 @@ class CustomMockAppsRepository: AppsRepositoryProtocol {
         self.fetchActionClosure = fetchActionClosure
     }
     
-    func getAppListing(count: Int) -> SignalProducer<AppEntityResponse, APIError> {
+    func getAppListing(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
         return self.fetchActionClosure(.appListing)
     }
     
-    func getAppRecommendation(count: Int) -> SignalProducer<AppEntityResponse, APIError> {
+    func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
         return self.fetchActionClosure(.recommendation)
     }
 }

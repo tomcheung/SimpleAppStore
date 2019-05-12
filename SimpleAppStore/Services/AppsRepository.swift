@@ -10,18 +10,19 @@ import Foundation
 import ReactiveSwift
 
 protocol AppsRepositoryProtocol {
-    func getAppListing(count: Int) -> SignalProducer<AppEntityResponse, APIError>
-    func getAppRecommendation(count: Int) -> SignalProducer<AppEntityResponse, APIError>
+    func getAppListing(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError>
+    func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError>
 }
 
 class AppsRepository: AppsRepositoryProtocol {
     static let shared = AppsRepository()
     
-    func getAppListing(count: Int) -> SignalProducer<AppEntityResponse, APIError> {
+    // offset is unused because api is not supported
+    func getAppListing(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
         return APIClient.appListing(count: count)
     }
     
-    func getAppRecommendation(count: Int) -> SignalProducer<AppEntityResponse, APIError> {
+    func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
         return APIClient.appRecommendation(count: count)
     }
 }
