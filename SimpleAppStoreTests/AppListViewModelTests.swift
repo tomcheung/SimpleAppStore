@@ -28,7 +28,7 @@ class AppListViewModelTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testFetchAppListingData() {
+    func testFetchMockAppListingData() {
         self.viewModel.fetchAppList()
         self.viewModel.sections.signal.observe(self.testObserver.observer)
         
@@ -57,12 +57,51 @@ class AppListViewModelTests: XCTestCase {
         self.viewModel.fetchAppList()
         expect(self.testObserver.lastValue?.last).toEventually(equal(expectedResult), timeout: 1)
     }
+    
+    func testFetchAppWithWrongURL() {
+        self.viewModel = AppListViewModel(appsRepository: CustomMockAppsRepository(fetchActionClosure: { _ -> SignalProducer<AppEntityResponse, APIError> in
+            return APIClient.requestWithModel(url: URL(string: "https://localhost/dummy_url.json")!, method: .get)
+        }))
+        
+        let emptyResponse = AppEntityResponse.Feed(entry: [])
+        self.mockAppsRepository.mockData = AppEntityResponse(feed: emptyResponse)
+        
+        let errorObserver = TestObserver<APIError?, Never>()
+        self.viewModel.error.observe(errorObserver.observer)
+        
+        self.viewModel.fetchAppList()
+        
+        expect(errorObserver.lastValue??.reason).toEventually(equal(.connectionError))
+    }
+    
+    func testFetchAppWithWrongResponseFormat() {
+        self.viewModel = AppListViewModel(appsRepository: CustomMockAppsRepository(fetchActionClosure: { _ -> SignalProducer<AppEntityResponse, APIError> in
+            return APIClient.requestWithModel(url: URL(string: "https://itunes.apple.com/hk/rss/topfreeapplications/limit=10/xml")!, method: .get)
+        }))
+        
+        let emptyResponse = AppEntityResponse.Feed(entry: [])
+        self.mockAppsRepository.mockData = AppEntityResponse(feed: emptyResponse)
+        
+        let errorObserver = TestObserver<APIError?, Never>()
+        self.viewModel.error.observe(errorObserver.observer)
+        
+        self.viewModel.fetchAppList()
+        
+        expect(errorObserver.lastValue??.reason).toEventually(equal(.parseJSONError))
+    }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testFetchActualAPI() {
+        // Do the overall testing by calling the actual server
+        let viewModel = AppListViewModel(appsRepository: AppsRepository())
+        viewModel.sections.signal.observe(self.testObserver.observer)
+        viewModel.fetchAppList()
+       
+        // Just test if can return data, cannot do futher data validation becuase actual api response alway change
+        expect(self.testObserver.lastValue?.last?.items.first).toEventuallyNot(
+            equal(AppListItem.item(AppCellViewModel.skeletion(order: 1))),
+            timeout: 1)
+        
+        expect(self.testObserver.lastValue?.last?.items.first).toEventuallyNot(beNil(), timeout: 1)
     }
 
 }

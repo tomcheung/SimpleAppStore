@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vgU-pM-aHf">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="169.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="896" height="169.5"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="safeArea" id="quv-5U-Dve">
                                                         <size key="itemSize" width="100" height="165"/>
@@ -195,6 +195,37 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eiz-i9-AhQ">
+                                <rect key="frame" x="0.0" y="812" width="414" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Error Message]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7ah-I5-O2h">
+                                        <rect key="frame" x="16" y="16" width="113.5" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="800" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VW-P9-Yd5">
+                                        <rect key="frame" x="358" y="10" width="40" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Retry">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="retryDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sbx-XJ-UUJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20568200950000001" green="0.467823565" blue="0.96479171509999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="2eJ-K8-4DC" firstAttribute="trailing" secondItem="3VW-P9-Yd5" secondAttribute="trailing" constant="16" id="PMo-ge-dWJ"/>
+                                    <constraint firstItem="3VW-P9-Yd5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7ah-I5-O2h" secondAttribute="trailing" constant="16" id="RZw-EA-NPS"/>
+                                    <constraint firstItem="2eJ-K8-4DC" firstAttribute="bottom" secondItem="7ah-I5-O2h" secondAttribute="bottom" constant="16" id="ReU-v2-WVR"/>
+                                    <constraint firstItem="7ah-I5-O2h" firstAttribute="top" secondItem="Eiz-i9-AhQ" secondAttribute="top" constant="16" id="fsS-dG-sqx"/>
+                                    <constraint firstItem="7ah-I5-O2h" firstAttribute="leading" secondItem="2eJ-K8-4DC" secondAttribute="leading" constant="16" id="pAx-rE-QiN"/>
+                                    <constraint firstItem="3VW-P9-Yd5" firstAttribute="centerY" secondItem="7ah-I5-O2h" secondAttribute="centerY" id="qcN-d1-4yY"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="2eJ-K8-4DC"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -203,12 +234,19 @@
                             <constraint firstItem="VPr-3m-hqM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8bd-1O-stH"/>
                             <constraint firstAttribute="bottom" secondItem="VPr-3m-hqM" secondAttribute="bottom" id="XVf-IP-Gp8"/>
                             <constraint firstAttribute="trailing" secondItem="VPr-3m-hqM" secondAttribute="trailing" id="Yjn-Pd-ZoJ"/>
+                            <constraint firstItem="Eiz-i9-AhQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="bottom" priority="250" id="ZeM-v0-QjX"/>
+                            <constraint firstAttribute="bottom" secondItem="Eiz-i9-AhQ" secondAttribute="bottom" priority="700" id="bSC-B2-9jG"/>
                             <constraint firstItem="Mmk-t0-uoa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gLv-ku-Xci"/>
                             <constraint firstAttribute="trailing" secondItem="Mmk-t0-uoa" secondAttribute="trailing" id="mK1-nx-1EF"/>
+                            <constraint firstItem="Eiz-i9-AhQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qoV-zJ-KJt"/>
+                            <constraint firstItem="Eiz-i9-AhQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="vZN-L7-KrB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="errorContainerView" destination="Eiz-i9-AhQ" id="bWZ-gh-YyJ"/>
+                        <outlet property="errorLabel" destination="7ah-I5-O2h" id="vAJ-0J-hp5"/>
+                        <outlet property="hideErrorContainerConstraint" destination="ZeM-v0-QjX" id="Xds-Ef-E57"/>
                         <outlet property="mainAppTableView" destination="VPr-3m-hqM" id="n2X-zH-akw"/>
                         <outlet property="searchBar" destination="Mmk-t0-uoa" id="3Ut-8e-i7q"/>
                     </connections>

@@ -15,6 +15,7 @@ class AppListViewModel {
     // MARK: - External property for ViewController (output)
     let sections: Property<[AppListSection]>
     let serchKeyword: MutableProperty<String?> = MutableProperty<String?>(nil)
+    let error: Signal<APIError?, Never>
     
     // MARK: - Internal property
     private let sectionsInternal: MutableProperty<[AppListSection]>
@@ -30,6 +31,13 @@ class AppListViewModel {
     // MARK: -
     init(appsRepository: AppsRepositoryProtocol = AppsRepository.shared) {
         self.appsRepository = appsRepository
+        
+        let responseSignal = Signal.combineLatest(self.fetchAppListAction.values, self.fetchAppRecommendationAction.values)
+        
+        self.error = Signal<APIError?, Never>.merge(
+            self.fetchAppListAction.errors.map { $0 }, self.fetchAppRecommendationAction.errors.map { $0 }, // map{$0}: Convert non-optional to optional
+            responseSignal.map { _ in nil } // Only reset error state when both app list and app recommendation are return
+        )
         
         let appSkeletion = (1...10).map { AppCellViewModel.skeletion(order: $0) }
         let skeletionSections = AppListViewModel.mapToSections(appRecommendation: appSkeletion, appsList: appSkeletion, keyword: nil)

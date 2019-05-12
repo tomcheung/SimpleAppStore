@@ -10,10 +10,34 @@ import Foundation
 import Alamofire
 import ReactiveSwift
 
-enum APIError: Error {
-    case parseJSONError(DecodingError)
-    case unexpected
+struct APIError: Error {
+    enum Reason {
+        case parseJSONError
+        case unexpected
+        case connectionError
+        case connectionTimeout
+        case noInternetConnection
+    }
+    
+    let reason: Reason
+    let detailError: Error
+    
+    var message: String {
+        switch self.reason {
+        case .noInternetConnection:
+            return "No internet connection"
+        case .parseJSONError:
+            return "Cannot read server response"
+        case .connectionError:
+            return "Connection problem (\(self.detailError.localizedDescription))"
+        case .connectionTimeout:
+            return "Connection timeout"
+        default:
+            return self.detailError.localizedDescription
+        }
+    }
 }
+
 
 class APIClient {
     
@@ -31,7 +55,7 @@ class APIClient {
     
     // MARK: - Helper function
     
-    static private func requestWithModel<T: Decodable>(url: URL, method: HTTPMethod, param: [String: Any]? = nil) -> SignalProducer<T, APIError> {
+    static func requestWithModel<T: Decodable>(url: URL, method: HTTPMethod, param: [String: Any]? = nil) -> SignalProducer<T, APIError> {
         return ReactiveAlamofire.responseJSON(url: url, method: method, param: param)
 //            .on(starting: {
 //                print("start api request: \(url)")
@@ -46,15 +70,42 @@ class APIClient {
             .mapError { (error) -> APIError in
                 switch error {
                 case let decodingError as DecodingError:
-                    return APIError.parseJSONError(decodingError)
+                    return APIError(reason: .parseJSONError, detailError: decodingError)
+                case let afError as AFError:
+                    if case .responseSerializationFailed = afError {
+                        return APIError(reason: .parseJSONError, detailError: afError)
+                    } else {
+                        return APIError(reason: .connectionError, detailError: afError)
+                    }
                 default:
-                    return APIError.unexpected
+                    return APIClient.parseFallbackError(error)
                 }
             }
         
     }
     
-    // Suppose should be private, it just non-private for unit test
+    static func parseFallbackError(_ error: Error) -> APIError {
+        let nsError = error as NSError
+        
+        guard nsError.domain == NSURLErrorDomain else {
+            return APIError(reason: .unexpected, detailError: error)
+        }
+        
+        let reason: APIError.Reason
+        switch nsError.code {
+        case NSURLErrorCannotConnectToHost, NSURLErrorBadURL:
+            reason = .connectionError
+        case NSURLErrorTimedOut:
+            reason = .connectionTimeout
+        case NSURLErrorNotConnectedToInternet:
+            reason = .noInternetConnection
+        default:
+            reason = .unexpected
+        }
+        
+        return APIError(reason: reason, detailError: error)
+    }
+    
     static func mapResponse<Model: Decodable>(json: Any) throws -> Model {
         let data = try JSONSerialization.data(withJSONObject: json, options: [])
         return try APIClient.jsonDecoder.decode(Model.self, from: data)
