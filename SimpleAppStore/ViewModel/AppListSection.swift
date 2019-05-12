@@ -11,7 +11,7 @@ import ReactiveDataSource
 enum AppListItem {
     case list([AppCellViewModel])
     case item(AppCellViewModel)
-    case error(ErrorMessageCellViewModel)
+    case message(ErrorMessageCellViewModel)
 }
 
 extension AppListItem: Hashable {
@@ -21,7 +21,7 @@ extension AppListItem: Hashable {
             hasher.combine(appList)
         case .item(let app):
             hasher.combine(app)
-        case .error(let errorCellModel):
+        case .message(let errorCellModel):
             hasher.combine(errorCellModel)
         }
     }
@@ -37,7 +37,7 @@ struct AppListSection: ReactiveDataSourceHeaderFooterSection {
     var uniqueIdentifier: String
     var items: [Item]
     
-    init(sectionIdentifier: String, items: [Item], headerItem: String) {
+    init(sectionIdentifier: String, items: [Item], headerItem: String?) {
         self.uniqueIdentifier = sectionIdentifier
         self.items = items
         self.headerItem = headerItem

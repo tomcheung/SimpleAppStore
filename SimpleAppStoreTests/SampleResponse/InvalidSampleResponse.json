@@ -1,0 +1,363 @@
+{
+    "feed": {
+        "author": {
+            "name": {
+                "label": "iTunes Store"
+            },
+            "uri": {
+                "label": "http://www.apple.com/itunes/"
+            }
+        },
+        "entry": [
+            {
+                "im:name": {
+                    "label": "封神录-传承经典策略仙侠"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "巅峰争霸FIGHTING，你就是世界的神，强化你的阵容，排列你的阵形，诸神最高领域,只求巅峰一战，巅峰是给王者的唯一荣耀，我的世界唯我做主!!\n\n【游戏特色】\n\n1.神的规则由我改写!!\n穿越时空裂痕，时空行者来到一个神秘错置的国度。\n在这裡神魔横行，干扰人世！\n在这裡弑神戮魔，由你决定！\n\n2.百种角色应援!! 颠覆你所有想像\n百种角色，各自成神\n科技突破，颠覆传统\n组合最强队伍，成为新世界的神"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© LIBO WANG"
+                },
+                "title": {
+                    "label": "封神录-传承经典策略仙侠 - JITAO CHEN"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E5%B0%81%E7%A5%9E%E5%BD%95-%E4%BC%A0%E6%89%BF%E7%BB%8F%E5%85%B8%E7%AD%96%E7%95%A5%E4%BB%99%E4%BE%A0/id1434807705?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E5%B0%81%E7%A5%9E%E5%BD%95-%E4%BC%A0%E6%89%BF%E7%BB%8F%E5%85%B8%E7%AD%96%E7%95%A5%E4%BB%99%E4%BE%A0/id1434807705?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1434807705",
+                        "im:bundleId": "com.fsl.jian"
+                    }
+                },
+                "im:artist": {
+                    "label": "JITAO CHEN"
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2018-11-13T07:08:28-07:00",
+                    "attributes": {
+                        "label": "2018年11月13日"
+                    }
+                }
+            },
+            {
+                "name": {
+                    "label": "樱之剑魂 - 和风刀剑本格之作"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple125/v4/12/5e/c6/125ec640-89d1-e49d-9476-59bf5cae4fe2/AppIcon-1x_U007emarketing-85-220-9.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/12/5e/c6/125ec640-89d1-e49d-9476-59bf5cae4fe2/AppIcon-1x_U007emarketing-85-220-9.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple125/v4/12/5e/c6/125ec640-89d1-e49d-9476-59bf5cae4fe2/AppIcon-1x_U007emarketing-85-220-9.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "【超人气娘化题材，刀剑历史复兴】\n历史名刀化身刀剑萌娘，奔赴战场，守护历史。\n深度考究的对话剧情，通过角色台词和性格表现出的世界背景引人入胜 >_<\n\n【极致角色人设，唯美精致和风】\n数十位特征鲜明性格迥异的刀剑萌娘登场。\n唯美日式风情，精致和风画面。\n众多一线画师精心绘制海量立绘，更有丰富精美的羁绊等你收集  =。=\n\n【豪华声优阵容，演绎视听盛宴】\n日本豪华声优阵容倾情演绎。\n角色台词彰显个性，声控福利不容错过 (￣▽￣*)\n\n【轻松休闲玩法，随心玩转掌指】\n简单操作，轻松上手，最有爱的游戏体验。\n丰富多彩的日常剧情，在战斗之外还能体验到与刀剑们朝夕相处的真实感"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© Qin Ye"
+                },
+                "title": {
+                    "label": "樱之剑魂 - 和风刀剑本格之作 - CHONGQING CAI"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E6%A8%B1%E4%B9%8B%E5%89%91%E9%AD%82-%E5%92%8C%E9%A3%8E%E5%88%80%E5%89%91%E6%9C%AC%E6%A0%BC%E4%B9%8B%E4%BD%9C/id1355623908?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E6%A8%B1%E4%B9%8B%E5%89%91%E9%AD%82-%E5%92%8C%E9%A3%8E%E5%88%80%E5%89%91%E6%9C%AC%E6%A0%BC%E4%B9%8B%E4%BD%9C/id1355623908?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1355623908",
+                        "im:bundleId": "com.sakura.swordsoul"
+                    }
+                },
+                "im:artist": {
+                    "label": "CHONGQING CAI",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/chongqing-cai/id1441403651?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2019-01-25T00:24:04-07:00",
+                    "attributes": {
+                        "label": "2019年01月25日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "萌萌戰爭：冒險之旅"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/d6/78/2dd6788f-48ba-9855-0ac0-7a522fdf79c6/AppIcon-0-1x_U007emarketing-0-85-220-0-10.png/53x53bb-85.png",
+                        "height": "53"
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/d6/78/2dd6788f-48ba-9855-0ac0-7a522fdf79c6/AppIcon-0-1x_U007emarketing-0-85-220-0-10.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/2d/d6/78/2dd6788f-48ba-9855-0ac0-7a522fdf79c6/AppIcon-0-1x_U007emarketing-0-85-220-0-10.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "《萌萌戰爭》——全球首發全新英雄大合集放置類手遊，Q萌二次元畫風英雄，伴妳暢遊神秘大陸！Q萌的界面，豐富的養成體系、輕松休閑的玩法，細膩的畫面，輕快的音樂，刺激的戰鬥，華麗的進階，酷炫的武器，神秘的副本...輕松休閑的玩法，豐富多彩的劇情，豐厚的獎勵。還在等什麽？現在就加入遊戲與神秘大陸的英雄們壹起冒險，壹起成長吧！\n\n********************\n官方網站：http://mmzz.sxl.cn/\n聯繫客服：swfe0s@163.com"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© Zhuhai Tianhua Network Technology Co., Ltd."
+                },
+                "title": {
+                    "label": "萌萌戰爭：冒險之旅 - Zhuhai Tianhua Network Technology Co., Ltd."
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/%E8%90%8C%E8%90%8C%E6%88%B0%E7%88%AD-%E5%86%92%E9%9A%AA%E4%B9%8B%E6%97%85/id1459074261?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/%E8%90%8C%E8%90%8C%E6%88%B0%E7%88%AD-%E5%86%92%E9%9A%AA%E4%B9%8B%E6%97%85/id1459074261?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1459074261",
+                        "im:bundleId": "com.thyx.mmzz"
+                    }
+                },
+                "im:artist": {
+                    "label": "Zhuhai Tianhua Network Technology Co., Ltd.",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/zhuhai-tianhua-network-technology-co-ltd/id1446422790?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2019-04-23T12:36:26-07:00",
+                    "attributes": {
+                        "label": "2019年04月23日"
+                    }
+                }
+            },
+            {
+                "im:name": {
+                    "label": "War of Lords-3D Warfare"
+                },
+                "im:image": [
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/ec/a2/cf/eca2cf72-c9df-dc3c-a9f1-60482a03b0cd/AppIcon-1x_U007emarketing-85-220-4.png/53x53bb-85.png",
+                        "attributes": {
+                            "height": "53"
+                        }
+                    },
+                    {
+                        "label": "https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/ec/a2/cf/eca2cf72-c9df-dc3c-a9f1-60482a03b0cd/AppIcon-1x_U007emarketing-85-220-4.png/75x75bb-85.png",
+                        "attributes": {
+                            "height": "75"
+                        }
+                    },
+                    {
+                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/ec/a2/cf/eca2cf72-c9df-dc3c-a9f1-60482a03b0cd/AppIcon-1x_U007emarketing-85-220-4.png/100x100bb-85.png",
+                        "attributes": {
+                            "height": "100"
+                        }
+                    }
+                ],
+                "summary": {
+                    "label": "Are you ready for joining the war of lords? You will be the supreme ruler and master the destiny of your empire. More than 100 legendary generals are waiting for your summons. Recruit them and build up a powerful army! Ally with other players to destroy unstoppable enemies, conquer other kingdoms and slay epic monsters. Come to enjoy this game now!"
+                },
+                "im:price": {
+                    "label": "取得",
+                    "attributes": {
+                        "amount": "0.00000",
+                        "currency": "HKD"
+                    }
+                },
+                "im:contentType": {
+                    "attributes": {
+                        "term": "Application",
+                        "label": "應用程式"
+                    }
+                },
+                "rights": {
+                    "label": "© War of Lords"
+                },
+                "title": {
+                    "label": "War of Lords-3D Warfare - YUXIN CHEN"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/hk/app/war-of-lords-3d-warfare/id1447795738?mt=8&uo=2"
+                    }
+                },
+                "id": {
+                    "label": "https://itunes.apple.com/hk/app/war-of-lords-3d-warfare/id1447795738?mt=8&uo=2",
+                    "attributes": {
+                        "im:id": "1447795738",
+                        "im:bundleId": "com.mhugh.lzyf"
+                    }
+                },
+                "im:artist": {
+                    "label": "YUXIN CHEN",
+                    "attributes": {
+                        "href": "https://itunes.apple.com/hk/developer/yuxin-chen/id1447795737?mt=8&uo=2"
+                    }
+                },
+                "category": {
+                    "attributes": {
+                        "im:id": "6014",
+                        "term": "Games",
+                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
+                        "label": "遊戲"
+                    }
+                },
+                "im:releaseDate": {
+                    "label": "2019-01-11T18:40:43-07:00",
+                    "attributes": {
+                        "label": "2019年01月11日"
+                    }
+                }
+            }
+        ],
+        "updated": {
+            "label": "2019-05-08T06:30:17-07:00"
+        },
+        "rights": {
+            "label": "Copyright 2008 Apple Inc."
+        },
+        "title": {
+            "label": "iTunes Store：免費 App 排行"
+        },
+        "icon": {
+            "label": "http://itunes.apple.com/favicon.ico"
+        },
+        "link": [
+            {
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=hk&id=172314&popId=27"
+                }
+            },
+            {
+                "attributes": {
+                    "rel": "self",
+                    "href": "https://itunes.apple.com/hk/rss/topfreeapplications/limit=10/json"
+                }
+            }
+        ],
+        "id": {
+            "label": "https://itunes.apple.com/hk/rss/topfreeapplications/limit=10/json"
+        }
+    }
+}

@@ -14,7 +14,13 @@
 		9C06FE582285E2D500BFA282 /* AppReuseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE572285E2D500BFA282 /* AppReuseView.swift */; };
 		9C06FE5B2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE5A2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift */; };
 		9C06FE5D2286D4A500BFA282 /* ErrorMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE5C2286D4A500BFA282 /* ErrorMessageTableViewCell.swift */; };
-		9C1385E422830FC400CCEC93 /* SimpleAppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385E322830FC400CCEC93 /* SimpleAppStoreTests.swift */; };
+		9C06FE6022872DC800BFA282 /* InvalidSampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C06FE5F2287276900BFA282 /* InvalidSampleResponse.json */; };
+		9C06FE62228731FA00BFA282 /* APIParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE61228731FA00BFA282 /* APIParsingTests.swift */; };
+		9C06FE642287352400BFA282 /* AppsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE632287352400BFA282 /* AppsRepository.swift */; };
+		9C06FE66228736AB00BFA282 /* AppListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE65228736AB00BFA282 /* AppListViewModelTests.swift */; };
+		9C06FE682287382600BFA282 /* MockDataAppsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE672287382600BFA282 /* MockDataAppsRepository.swift */; };
+		9C06FE6A228741B700BFA282 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C06FE69228741B700BFA282 /* TestHelper.swift */; };
+		9C06FE6C228742B400BFA282 /* MockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C06FE6B228742B400BFA282 /* MockResponse.json */; };
 		9C1385EC2283115800CCEC93 /* TopAppListingSampleResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C1385EB2283115800CCEC93 /* TopAppListingSampleResponse.json */; };
 		9C1385EE2283118B00CCEC93 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385ED2283118B00CCEC93 /* APIClient.swift */; };
 		9C1385F42283245C00CCEC93 /* ReactiveAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385F32283245C00CCEC93 /* ReactiveAlamofire.swift */; };
@@ -22,12 +28,12 @@
 		9C1385F82283315E00CCEC93 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385F72283315E00CCEC93 /* App.swift */; };
 		9C47EE172281BF0D00FC98D9 /* AppListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C47EE162281BF0D00FC98D9 /* AppListViewModel.swift */; };
 		9C47EE192281C3E100FC98D9 /* AppCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C47EE182281C3E100FC98D9 /* AppCellViewModel.swift */; };
+		9C4DBE252287D89300E564D2 /* TestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DBE242287D89300E564D2 /* TestObserver.swift */; };
 		9C91313022806EF700658D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91312F22806EF700658D7E /* AppDelegate.swift */; };
 		9C91313222806EF700658D7E /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91313122806EF700658D7E /* AppListViewController.swift */; };
 		9C91313522806EF700658D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C91313322806EF700658D7E /* Main.storyboard */; };
 		9C91313722806EF800658D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C91313622806EF800658D7E /* Assets.xcassets */; };
 		9C91313A22806EF800658D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C91313822806EF800658D7E /* LaunchScreen.storyboard */; };
-		9C9131422280701A00658D7E /* AppstoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9131412280701A00658D7E /* AppstoreRepository.swift */; };
 		9C91315122807CAC00658D7E /* AppListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C91315022807CAC00658D7E /* AppListSection.swift */; };
 		9C91315422807CC300658D7E /* ReactiveDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C91315222807CBC00658D7E /* ReactiveDataSource.framework */; };
 		9C91315522807CC300658D7E /* ReactiveDataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C91315222807CBC00658D7E /* ReactiveDataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -71,8 +77,14 @@
 		9C06FE572285E2D500BFA282 /* AppReuseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReuseView.swift; sourceTree = "<group>"; };
 		9C06FE5A2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageCellViewModel.swift; sourceTree = "<group>"; };
 		9C06FE5C2286D4A500BFA282 /* ErrorMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageTableViewCell.swift; sourceTree = "<group>"; };
+		9C06FE5F2287276900BFA282 /* InvalidSampleResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = InvalidSampleResponse.json; sourceTree = "<group>"; };
+		9C06FE61228731FA00BFA282 /* APIParsingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIParsingTests.swift; sourceTree = "<group>"; };
+		9C06FE632287352400BFA282 /* AppsRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsRepository.swift; sourceTree = "<group>"; };
+		9C06FE65228736AB00BFA282 /* AppListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewModelTests.swift; sourceTree = "<group>"; };
+		9C06FE672287382600BFA282 /* MockDataAppsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataAppsRepository.swift; sourceTree = "<group>"; };
+		9C06FE69228741B700BFA282 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		9C06FE6B228742B400BFA282 /* MockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockResponse.json; sourceTree = "<group>"; };
 		9C1385E122830FC400CCEC93 /* SimpleAppStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleAppStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C1385E322830FC400CCEC93 /* SimpleAppStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAppStoreTests.swift; sourceTree = "<group>"; };
 		9C1385E522830FC400CCEC93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C1385EB2283115800CCEC93 /* TopAppListingSampleResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TopAppListingSampleResponse.json; sourceTree = "<group>"; };
 		9C1385ED2283118B00CCEC93 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -81,6 +93,7 @@
 		9C1385F72283315E00CCEC93 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		9C47EE162281BF0D00FC98D9 /* AppListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewModel.swift; sourceTree = "<group>"; };
 		9C47EE182281C3E100FC98D9 /* AppCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellViewModel.swift; sourceTree = "<group>"; };
+		9C4DBE242287D89300E564D2 /* TestObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObserver.swift; sourceTree = "<group>"; };
 		9C91312C22806EF700658D7E /* SimpleAppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleAppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C91312F22806EF700658D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C91313122806EF700658D7E /* AppListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +101,6 @@
 		9C91313622806EF800658D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C91313922806EF800658D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C91313B22806EF800658D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C9131412280701A00658D7E /* AppstoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppstoreRepository.swift; sourceTree = "<group>"; };
 		9C91315022807CAC00658D7E /* AppListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListSection.swift; sourceTree = "<group>"; };
 		9C91315222807CBC00658D7E /* ReactiveDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A9932288D67C2B92899A63 /* Pods_SimpleAppStore_SimpleAppStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAppStore_SimpleAppStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,12 +159,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9C06FE5E2287272100BFA282 /* SampleResponse */ = {
+			isa = PBXGroup;
+			children = (
+				9C06FE5F2287276900BFA282 /* InvalidSampleResponse.json */,
+				9C1385EB2283115800CCEC93 /* TopAppListingSampleResponse.json */,
+				9C06FE6B228742B400BFA282 /* MockResponse.json */,
+			);
+			path = SampleResponse;
+			sourceTree = "<group>";
+		};
 		9C1385E222830FC400CCEC93 /* SimpleAppStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				9C1385E322830FC400CCEC93 /* SimpleAppStoreTests.swift */,
+				9C06FE5E2287272100BFA282 /* SampleResponse */,
+				9C06FE61228731FA00BFA282 /* APIParsingTests.swift */,
+				9C06FE65228736AB00BFA282 /* AppListViewModelTests.swift */,
+				9C06FE672287382600BFA282 /* MockDataAppsRepository.swift */,
+				9C4DBE242287D89300E564D2 /* TestObserver.swift */,
+				9C06FE69228741B700BFA282 /* TestHelper.swift */,
 				9C1385E522830FC400CCEC93 /* Info.plist */,
-				9C1385EB2283115800CCEC93 /* TopAppListingSampleResponse.json */,
 			);
 			path = SimpleAppStoreTests;
 			sourceTree = "<group>";
@@ -217,8 +243,8 @@
 		9C91314F2280776000658D7E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9C06FE632287352400BFA282 /* AppsRepository.swift */,
 				9C1385F32283245C00CCEC93 /* ReactiveAlamofire.swift */,
-				9C9131412280701A00658D7E /* AppstoreRepository.swift */,
 				9C1385ED2283118B00CCEC93 /* APIClient.swift */,
 			);
 			path = Services;
@@ -291,6 +317,7 @@
 				TargetAttributes = {
 					9C1385E022830FC400CCEC93 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 9C91312B22806EF700658D7E;
 					};
 					9C91312B22806EF700658D7E = {
@@ -322,7 +349,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C06FE6022872DC800BFA282 /* InvalidSampleResponse.json in Resources */,
 				9C1385EC2283115800CCEC93 /* TopAppListingSampleResponse.json in Resources */,
+				9C06FE6C228742B400BFA282 /* MockResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +489,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C1385E422830FC400CCEC93 /* SimpleAppStoreTests.swift in Sources */,
+				9C06FE66228736AB00BFA282 /* AppListViewModelTests.swift in Sources */,
+				9C06FE62228731FA00BFA282 /* APIParsingTests.swift in Sources */,
+				9C06FE682287382600BFA282 /* MockDataAppsRepository.swift in Sources */,
+				9C06FE6A228741B700BFA282 /* TestHelper.swift in Sources */,
+				9C4DBE252287D89300E564D2 /* TestObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C06FE5B2286D1EB00BFA282 /* ErrorMessageCellViewModel.swift in Sources */,
+				9C06FE642287352400BFA282 /* AppsRepository.swift in Sources */,
 				9C06FE522285CB6200BFA282 /* AppRecommendationTableViewCell.swift in Sources */,
 				9C1385F62283304100CCEC93 /* AppResponse.swift in Sources */,
 				9C47EE172281BF0D00FC98D9 /* AppListViewModel.swift in Sources */,
@@ -479,7 +513,6 @@
 				9C91313022806EF700658D7E /* AppDelegate.swift in Sources */,
 				9C06FE562285E28300BFA282 /* AppCollectionViewCell.swift in Sources */,
 				9C47EE192281C3E100FC98D9 /* AppCellViewModel.swift in Sources */,
-				9C9131422280701A00658D7E /* AppstoreRepository.swift in Sources */,
 				9C06FE5D2286D4A500BFA282 /* ErrorMessageTableViewCell.swift in Sources */,
 				9C1385EE2283118B00CCEC93 /* APIClient.swift in Sources */,
 				9C06FE502285756F00BFA282 /* AppTableViewCell.swift in Sources */,
@@ -522,6 +555,7 @@
 			baseConfigurationReference = 5B1E0A6C5BB710C01CA48D79 /* Pods-SimpleAppStore-SimpleAppStoreTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QFYDDQHN2F;
 				INFOPLIST_FILE = SimpleAppStoreTests/Info.plist;
@@ -532,6 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tom.SimpleAppStoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleAppStore.app/SimpleAppStore";
@@ -543,6 +578,7 @@
 			baseConfigurationReference = 85E289AABA5F3AA71ECAFADE /* Pods-SimpleAppStore-SimpleAppStoreTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QFYDDQHN2F;
 				INFOPLIST_FILE = SimpleAppStoreTests/Info.plist;

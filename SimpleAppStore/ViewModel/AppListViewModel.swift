@@ -10,29 +10,32 @@ import Foundation
 import ReactiveSwift
 
 class AppListViewModel {
+    let appsRepository: AppsRepositoryProtocol
     
     // MARK: - External property for ViewController (output)
     let sections: Property<[AppListSection]>
     let serchKeyword: MutableProperty<String?> = MutableProperty<String?>(nil)
     
     // MARK: - Internal property
-    let sectionsInternal: MutableProperty<[AppListSection]>
+    private let sectionsInternal: MutableProperty<[AppListSection]>
     
     // MARK: - Actions
-    private let fetchAppListAction = Action { () -> SignalProducer<AppEntityResponse, APIClient.APIError> in
-        return APIClient.appListing()
+    private let fetchAppListAction = Action { (appsRepository: AppsRepositoryProtocol) -> SignalProducer<AppEntityResponse, APIError> in
+        return appsRepository.getAppListing(count: 10)
     }
-    private let fetchAppRecommendationAction = Action { () -> SignalProducer<AppEntityResponse, APIClient.APIError> in
-        return APIClient.appRecommendation()
+    private let fetchAppRecommendationAction = Action { (appsRepository: AppsRepositoryProtocol) -> SignalProducer<AppEntityResponse, APIError> in
+        return appsRepository.getAppRecommendation(count: 10)
     }
     
     // MARK: -
-    init() {
+    init(appsRepository: AppsRepositoryProtocol = AppsRepository.shared) {
+        self.appsRepository = appsRepository
+        
         let appSkeletion = (1...10).map { AppCellViewModel.skeletion(order: $0) }
         let skeletionSections = AppListViewModel.mapToSections(appRecommendation: appSkeletion, appsList: appSkeletion, keyword: nil)
         self.sectionsInternal = MutableProperty<[AppListSection]>(skeletionSections)
         self.sections = Property(capturing: self.sectionsInternal)
-
+        
         let appListing = self.fetchAppListAction.values
             .map { (response) -> [AppCellViewModel] in
                 return response.feed.entry.enumerated().map { (index, app) in
@@ -51,8 +54,8 @@ class AppListViewModel {
     
     // MARK: - Public method
     func fetchAppList() {
-        self.fetchAppListAction.apply().start()
-        self.fetchAppRecommendationAction.apply().start()
+        self.fetchAppListAction.apply(self.appsRepository).start()
+        self.fetchAppRecommendationAction.apply(self.appsRepository).start()
     }
     
     static func filterResult(appViewModels: [AppCellViewModel], keyword: String?) -> [AppCellViewModel] {
@@ -77,17 +80,17 @@ class AppListViewModel {
         let filteredAppsList = AppListViewModel.filterResult(appViewModels: appsList, keyword: keyword)
         
         let appRecommendationListItem: [AppListItem] = filteredAppRecommendation.isEmpty
-            ? [AppListItem.error(
+            ? [AppListItem.message(
                 ErrorMessageCellViewModel(errorMessage: (keyword == nil) ? "No Result" : "No serach result on app recommendation",
-                                          cellHeight: AppListViewController.Style.appRecommendationRowHeight)
-                )]
+                                          cellHeight: AppListViewController.Style.appRecommendationRowHeight))
+              ]
             : [AppListItem.list(filteredAppRecommendation)]
         
         let appListItem: [AppListItem] = filteredAppsList.isEmpty
-            ? [AppListItem.error(
+            ? [AppListItem.message(
                 ErrorMessageCellViewModel(errorMessage: (keyword == nil) ? "No Result" : "No serach result on app listing",
-                                          cellHeight: 80)
-                )]
+                                          cellHeight: AppListViewController.Style.appListingRowHeight))
+              ]
             : filteredAppsList.map { AppListItem.item($0) }
         
         return [
@@ -99,7 +102,7 @@ class AppListViewModel {
             AppListSection(
                 sectionIdentifier: "listing",
                 items: appListItem,
-                headerItem: "App listing"
+                headerItem: nil
             )
         ]
     }

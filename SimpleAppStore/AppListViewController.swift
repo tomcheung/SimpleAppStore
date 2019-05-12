@@ -47,7 +47,7 @@ class AppListViewController: UIViewController, UITableViewDelegate {
                 return "appCell"
             case .list:
                 return "appListCell"
-            case .error:
+            case .message:
                 return "errorMessage"
             }
         }
@@ -65,12 +65,26 @@ class AppListViewController: UIViewController, UITableViewDelegate {
         }
         
         switch cellViewModel {
-        case .error(let errorCellModel):
+        case .message(let errorCellModel):
             return errorCellModel.cellHeight
         case .item:
             return Style.appListingRowHeight
         case .list:
             return Style.appRecommendationRowHeight
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        guard cell is AppTableViewCell else {
+            return
+        }
+        
+        cell.alpha = 0
+        cell.transform = CGAffineTransform(translationX: 0, y: 100)
+        
+        UIView.animate(withDuration: 0.4) {
+            cell.alpha = 1
+            cell.transform = .identity
         }
     }
 

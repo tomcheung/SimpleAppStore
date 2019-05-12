@@ -18,7 +18,7 @@ class ErrorMessageTableViewCell: ReactiveTableViewCell<AppListItem> {
     }
 
     override func bind(viewModel: AppListItem, disposable: CompositeDisposable) {
-        guard case let .error(errorMessageViewModel) = viewModel else {
+        guard case let .message(errorMessageViewModel) = viewModel else {
             return
         }
         
