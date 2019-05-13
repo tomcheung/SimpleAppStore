@@ -12,14 +12,18 @@ import ReactiveSwift
 
 class ReactiveAlamofire {
     
+    private static let sessiontManager: SessionManager = {
+        let urlConfiguration = URLSessionConfiguration.default
+        urlConfiguration.urlCache = nil // Disable cache by default
+        return SessionManager(configuration: urlConfiguration)
+    }()
+    
     // No any instance function in this class
-    private init() {
-        
-    }
+    private init() { }
     
     static func responseJSON(url: URL, method: HTTPMethod, param: [String: Any]?) -> SignalProducer<Any, Error> {
         return SignalProducer{ (observer, liftTime) in
-            let request = Alamofire.request(url, method: method, parameters: param)
+            let request = ReactiveAlamofire.sessiontManager.request(url, method: method, parameters: param)
                 .responseJSON(completionHandler: { (response) in
                     switch response.result {
                     case .success(let result):

@@ -15,7 +15,7 @@ final class TestHelper {
     /// - Parameter filename: json filename WITHOUT extension (.json)
     /// - Returns: JSON dictionary
     static func loadJSONSampleFile(filename: String) -> Any {
-        guard let path = Bundle(for: APIParsingTests.self).url(forResource: filename, withExtension: "json") else {
+        guard let path = Bundle(for: TestHelper.self).url(forResource: filename, withExtension: "json") else {
             fatalError("JSON sample file \(filename).json not exist!!")
         }
         
@@ -27,7 +27,7 @@ final class TestHelper {
         }
     }
     
-    static func loadSampleResponse(jsonFile: String) throws -> AppEntityResponse {
+    static func loadSampleResponse(jsonFile: String) throws -> AppDetailResponse {
         let sample = loadJSONSampleFile(filename: jsonFile)
         return try APIClient.mapResponse(json: sample)
     }

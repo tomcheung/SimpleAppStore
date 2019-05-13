@@ -27,11 +27,20 @@ struct AppEntityResponse: Codable {
         let name: LabelAttributes
         let image: [LabelAttributes]
         let category: Category
+        let id: LabelAttributes
+        var rating: Decimal?
+        
+        var appId: String {
+            let id = self.id.attributes?["im:id"]
+            return id ?? "-1"
+        }
         
         fileprivate enum CodingKeys: String, CodingKey {
             case name = "im:name"
             case image = "im:image"
             case category
+            case id
+            case rating
         }
     }
     

@@ -53,6 +53,12 @@ class APIClient {
         return APIClient.requestWithModel(url: url!, method: .get)
     }
     
+    static func appDetail(appIds: [String]) -> SignalProducer<AppDetailResponse, APIError> {
+        let ids = appIds.joined(separator: ",")
+        let url = URL(string: "https://itunes.apple.com/hk/lookup")
+        return APIClient.requestWithModel(url: url!, method: .get, param: ["id": ids])
+    }
+    
     // MARK: - Helper function
     
     static func requestWithModel<T: Decodable>(url: URL, method: HTTPMethod, param: [String: Any]? = nil) -> SignalProducer<T, APIError> {
@@ -81,7 +87,9 @@ class APIClient {
                     return APIClient.parseFallbackError(error)
                 }
             }
-        
+            .on(failed: { (error) in
+                print("api \(url) fail: \(error)")
+            })
     }
     
     static func parseFallbackError(_ error: Error) -> APIError {
@@ -93,7 +101,7 @@ class APIClient {
         
         let reason: APIError.Reason
         switch nsError.code {
-        case NSURLErrorCannotConnectToHost, NSURLErrorBadURL:
+        case NSURLErrorCannotConnectToHost, NSURLErrorCannotFindHost, NSURLErrorBadURL:
             reason = .connectionError
         case NSURLErrorTimedOut:
             reason = .connectionTimeout

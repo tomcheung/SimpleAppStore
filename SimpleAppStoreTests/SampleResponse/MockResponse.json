@@ -1,69 +1,125 @@
 {
-    "feed": {
-        "author": {
-            "name": {
-                "label": "iTunes Store"
-            },
-            "uri": {
-                "label": "http://www.apple.com/itunes/"
-            }
-        },
-        "entry": [
-            {
-                "im:name": {
-                    "label": "Testing App 1"
-                },
-                "im:image": [
-                    {
-                        "label": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/53x53bb-85.png",
-                        "attributes": {
-                            "height": "53"
-                        }
-                    },
-                    {
-                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/75x75bb-85.png",
-                        "attributes": {
-                            "height": "75"
-                        }
-                    },
-                    {
-                        "label": "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/100x100bb-85.png",
-                        "attributes": {
-                            "height": "100"
-                        }
-                    }
-                ],
-                "summary": {
-                    "label": "Testing App Summary"
-                },
-                "im:price": {
-                    "label": "取得",
-                    "attributes": {
-                        "amount": "0.00000",
-                        "currency": "HKD"
-                    }
-                },
-                "im:contentType": {
-                    "attributes": {
-                        "term": "Application",
-                        "label": "應用程式"
-                    }
-                },
-                "category": {
-                    "attributes": {
-                        "im:id": "6014",
-                        "term": "Games",
-                        "scheme": "https://itunes.apple.com/hk/genre/ios-%E9%81%8A%E6%88%B2/id6014?mt=8&uo=2",
-                        "label": "遊戲"
-                    }
-                },
-                "im:releaseDate": {
-                    "label": "2018-11-13T07:08:28-07:00",
-                    "attributes": {
-                        "label": "2018年11月13日"
-                    }
-                }
-            }
-        ]
-    }
+    "resultCount": 1,
+    "results": [
+        {
+            "screenshotUrls": [
+                "https://is5-ssl.mzstatic.com/image/thumb/Purple113/v4/b4/80/cb/b480cbee-4d70-e765-50ba-d30a8d056731/source/392x696bb.jpg",
+                "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/79/f5/86/79f58652-bd0c-bebb-8044-69252d8e9e1b/source/392x696bb.jpg",
+                "https://is4-ssl.mzstatic.com/image/thumb/Purple113/v4/b9/cb/78/b9cb78a6-56e3-5624-2101-dabb864d2f9f/source/392x696bb.jpg",
+                "https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/fc/84/cc/fc84cc30-e76e-3694-9324-daa16ec21edb/source/392x696bb.jpg",
+                "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/f6/31/b0/f631b001-499c-ede8-41f7-24561b6338a2/source/392x696bb.jpg",
+                "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/e7/54/6d/e7546d8b-ca20-e420-0443-cef502a95015/source/392x696bb.jpg"
+            ],
+            "ipadScreenshotUrls": [],
+            "appletvScreenshotUrls": [],
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/f2/78/5f/f2785f53-f618-6126-45dc-1abb46c00ec9/source/60x60bb.jpg",
+            "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/f2/78/5f/f2785f53-f618-6126-45dc-1abb46c00ec9/source/512x512bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/f2/78/5f/f2785f53-f618-6126-45dc-1abb46c00ec9/source/100x100bb.jpg",
+            "artistViewUrl": "https://itunes.apple.com/hk/developer/hk01-company-limited/id1071376679?mt=8&uo=4",
+            "isGameCenterEnabled": false,
+            "supportedDevices": [
+                "iPhone5-iPhone5",
+                "iPadFourthGen-iPadFourthGen",
+                "iPadFourthGen4G-iPadFourthGen4G",
+                "iPhone5c-iPhone5c",
+                "iPhone5s-iPhone5s",
+                "iPadAir-iPadAir",
+                "iPadAirCellular-iPadAirCellular",
+                "iPadMiniRetina-iPadMiniRetina",
+                "iPadMiniRetinaCellular-iPadMiniRetinaCellular",
+                "iPhone6-iPhone6",
+                "iPhone6Plus-iPhone6Plus",
+                "iPadAir2-iPadAir2",
+                "iPadAir2Cellular-iPadAir2Cellular",
+                "iPadMini3-iPadMini3",
+                "iPadMini3Cellular-iPadMini3Cellular",
+                "iPodTouchSixthGen-iPodTouchSixthGen",
+                "iPhone6s-iPhone6s",
+                "iPhone6sPlus-iPhone6sPlus",
+                "iPadMini4-iPadMini4",
+                "iPadMini4Cellular-iPadMini4Cellular",
+                "iPadPro-iPadPro",
+                "iPadProCellular-iPadProCellular",
+                "iPadPro97-iPadPro97",
+                "iPadPro97Cellular-iPadPro97Cellular",
+                "iPhoneSE-iPhoneSE",
+                "iPhone7-iPhone7",
+                "iPhone7Plus-iPhone7Plus",
+                "iPad611-iPad611",
+                "iPad612-iPad612",
+                "iPad71-iPad71",
+                "iPad72-iPad72",
+                "iPad73-iPad73",
+                "iPad74-iPad74",
+                "iPhone8-iPhone8",
+                "iPhone8Plus-iPhone8Plus",
+                "iPhoneX-iPhoneX",
+                "iPad75-iPad75",
+                "iPad76-iPad76",
+                "iPhoneXS-iPhoneXS",
+                "iPhoneXSMax-iPhoneXSMax",
+                "iPhoneXR-iPhoneXR",
+                "iPad812-iPad812",
+                "iPad834-iPad834",
+                "iPad856-iPad856",
+                "iPad878-iPad878",
+                "iPadMini5-iPadMini5",
+                "iPadMini5Cellular-iPadMini5Cellular",
+                "iPadAir3-iPadAir3",
+                "iPadAir3Cellular-iPadAir3Cellular"
+            ],
+            "kind": "software",
+            "features": [],
+            "advisories": [
+                "偶爾/輕度的現實生活暴力",
+                "偶爾/輕度的性愛或裸露內容",
+                "偶爾/輕度的恐怖或驚嚇題材",
+                "偶爾/輕度的粗俗用語或低俗幽默",
+                "偶爾/輕度的模擬賭博內容",
+                "偶爾/輕度的成人或性暗示題材",
+                "偶爾/輕度的藥物或治療資訊",
+                "偶爾/輕度的暴力卡通或幻想",
+                "偶爾/輕度使用或提及酒精、煙草或藥物"
+            ],
+            "trackCensoredName": "香港01",
+            "averageUserRatingForCurrentVersion": 4.5,
+            "languageCodesISO2A": [
+                "ZH"
+            ],
+            "fileSizeBytes": "86995968",
+            "contentAdvisoryRating": "12+",
+            "userRatingCountForCurrentVersion": 626,
+            "trackViewUrl": "https://itunes.apple.com/hk/app/%E9%A6%99%E6%B8%AF01/id1084662006?mt=8&uo=4",
+            "trackContentRating": "12+",
+            "isVppDeviceBasedLicensingEnabled": true,
+            "releaseNotes": "1. 可以於e肚仔用 Apple Pay 付款，更加方便快捷!\n2. 改善程式體驗穩定性\n3. 修復程式使用問題",
+            "minimumOsVersion": "10.0",
+            "formattedPrice": "免費",
+            "currentVersionReleaseDate": "2019-05-06T03:05:11Z",
+            "sellerName": "HK01 Company Limited",
+            "genreIds": [
+                "6009",
+                "6012"
+            ],
+            "currency": "HKD",
+            "wrapperType": "software",
+            "version": "3.26.0",
+            "description": "《香港01》結合手機應用程式、網站及周報，打造一個屬於香港人的互聯網生活平台。\n\n詳盡新聞內容\n\n新聞資訊包羅萬有，每日24小時即時提供香港新聞、頭條新聞及專題報導，讓你第一手掌握即時香港及國際新聞，全方位了解社會大小事，揭示社會現象。娛樂新聞頻道，追蹤最新最快娛樂、電影消息，緊貼明星動態及港劇、日劇、韓劇等電視劇資訊。\n\n生活主題內容\n\n多元化生活頻道，覆蓋科技玩物，緊貼最新蘋果 (Apple)產品發佈，開箱實測蘋果手機、耳機，及熱門遊戲攻略。飲食頻道，推介香港美食及影片示範多種家常菜、湯水食譜。旅遊頻道，為你搜羅世界各地最新機票、酒店等旅遊情報。此外，亦覆蓋寵物、音樂、親子、哲學等豐富內容。\n\n\n功能特點\n\n提供個性化及多元化的生活服務平台，讓您一App 輕鬆掌握活動、即時天氣和交通等資訊，更可享用外賣自取、01心意慈善平台及01齊跑等服務\n\n自訂個人化內容：按你挑選的閱讀喜好推薦內容，睇你所想\n\n01心意：香港本地首個網上慈善平台，齊齊用心意成就好事\n\n寵物地圖：一頁瀏覽全港獸醫診所資料、地址、營業時間及聯絡方法\n\n天氣：提供即時天氣報告及未來 8 日天氣預報\n\n01齊跑：與 Apple Health (Health Kit) 或其他運動智能裝置連結，把跑步運動紀錄數據同步至 01齊跑，可換取積分或禮品\n\n01無限：註冊成為 01會員，尊享驚喜優惠及獨家活動 \n\n01TV：自家製作各類最新影片及直播，娛樂、資訊兼備",
+            "releaseDate": "2016-03-01T05:30:02Z",
+            "primaryGenreName": "News",
+            "primaryGenreId": 6009,
+            "trackId": 1084662006,
+            "trackName": "香港01",
+            "artistId": 1071376679,
+            "artistName": "HK01 Company Limited",
+            "genres": [
+                "新聞",
+                "生活風格"
+            ],
+            "price": 0.00,
+            "bundleId": "com.hk01.news-app",
+            "averageUserRating": 4.5,
+            "userRatingCount": 38710
+        }
+    ]
 }

@@ -23,10 +23,10 @@ class AppListViewModel {
     private let sectionsInternal: MutableProperty<[AppListSection]>
     
     // MARK: - Actions
-    private let fetchAppListAction = Action { (appsRepository: AppsRepositoryProtocol, offset: Int) -> SignalProducer<(AppEntityResponse, offset: Int), APIError> in
+    private let fetchAppListAction = Action { (appsRepository: AppsRepositoryProtocol, offset: Int) -> SignalProducer<([App], offset: Int), APIError> in
         return appsRepository.getAppListing(count: 10, offset: offset).map { ($0, offset) }
     }
-    private let fetchAppRecommendationAction = Action { (appsRepository: AppsRepositoryProtocol, offset: Int) -> SignalProducer<(AppEntityResponse, offset: Int), APIError> in
+    private let fetchAppRecommendationAction = Action { (appsRepository: AppsRepositoryProtocol, offset: Int) -> SignalProducer<([App], offset: Int), APIError> in
         return appsRepository.getAppRecommendation(count: 10, offset: offset).map { ($0, offset) }
     }
     
@@ -64,12 +64,12 @@ class AppListViewModel {
         self.fetchAppListAction.apply((self.appsRepository, offset: self.appListing.value.count - 1)).start()
     }
     
-    private static func scanFetchedResult(lastResult: [App], result: (AppEntityResponse, offset: Int)) -> [App] {
-        let (response, offset) = result
+    private static func scanFetchedResult(lastResult: [App], result: ([App], offset: Int)) -> [App] {
+        let (appList, offset) = result
         if offset == 0 {
-            return response.feed.entry
+            return appList
         } else {
-            return lastResult + response.feed.entry
+            return lastResult + appList
         }
     }
     
@@ -126,7 +126,7 @@ class AppListViewModel {
               ]
             : filteredAppsList.map { AppListItem.item($0) }
         
-        if keyword == nil {
+        if keyword == nil && !appsList.isEmpty {
             // Last item loading indicator
             appListItem.append(AppListItem.item(AppCellViewModel.skeletion(order: appListItem.count + 1)))
         }

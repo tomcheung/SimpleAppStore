@@ -11,19 +11,19 @@ import ReactiveSwift
 @testable import SimpleAppStore
 
 class MockDataAppsRepository: AppsRepositoryProtocol {
-    var mockData: AppEntityResponse
+    var mockData: AppDetailResponse
     var mockError: APIError?
     
-    init(mockData: AppEntityResponse) {
+    init(mockData: AppDetailResponse) {
         self.mockData = mockData
         self.mockError = nil
     }
     
-    func getAppListing(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
-        return SignalProducer(value: self.mockData).delay(0.3, on: QueueScheduler.main)
+    func getAppListing(count: Int, offset: Int) -> SignalProducer<[App], APIError> {
+        return SignalProducer(value: self.mockData).delay(0.3, on: QueueScheduler.main).map { $0.results }
     }
     
-    func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
-        return SignalProducer(value: self.mockData).delay(0.3, on: QueueScheduler.main)
+    func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<[App], APIError> {
+        return SignalProducer(value: self.mockData).delay(0.3, on: QueueScheduler.main).map { $0.results }
     }
 }

@@ -24,8 +24,6 @@ class AppRecommendationTableViewCell: ReactiveTableViewCell<AppListItem> {
         self.recommendationDataSrouce.reuseIdentifier = { _ in "appCell" }
         self.recommendationCollectionView.reactive.setReactiveDataSource(self.recommendationDataSrouce)
         self.collectionFlowLayout = self.recommendationCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
-        
-        self.collectionFlowLayout?.itemSize = CGSize(width: 100, height: 165)
     }
     
     override func bind(viewModel: AppListItem, disposable: CompositeDisposable) {

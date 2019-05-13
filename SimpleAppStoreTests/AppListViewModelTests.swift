@@ -32,13 +32,13 @@ class AppListViewModelTests: XCTestCase {
         self.viewModel.fetchAppList()
         self.viewModel.sections.signal.observe(self.testObserver.observer)
         
-        let expectedCellViewModel = AppCellViewModel(title: "Testing App 1",
-                                                     subtitle: "遊戲",
+        let expectedCellViewModel = AppCellViewModel(title: "香港01",
+                                                     subtitle: "新聞",
                                                      order: 1,
-                                                     imageURL: URL(string: "https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/5e/90/4a/5e904a82-5707-99e9-7e7e-fcc630ccf4e5/AppIcon-0-1x_U007emarketing-0-85-220-6.png/100x100bb-85.png"),
+                                                     imageURL: URL(string: "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/f2/78/5f/f2785f53-f618-6126-45dc-1abb46c00ec9/source/100x100bb.jpg"),
                                                      isSkeletion: false)
         
-        let expectedResult = AppListSection(sectionIdentifier: "listing", items: [.item(expectedCellViewModel)], headerItem: nil)
+        let expectedResult = AppListSection(sectionIdentifier: "listing", items: [.item(expectedCellViewModel), .item(AppCellViewModel.skeletion(order: 2))], headerItem: nil)
         self.viewModel.fetchAppList()
         
         // Only compare last section (App Listing)
@@ -46,8 +46,7 @@ class AppListViewModelTests: XCTestCase {
     }
     
     func testFetchAppListingWithNoResult() {
-        let emptyResponse = AppEntityResponse.Feed(entry: [])
-        self.mockAppsRepository.mockData = AppEntityResponse(feed: emptyResponse)
+        self.mockAppsRepository.mockData = AppDetailResponse(results: [])
         
         self.viewModel.sections.signal.observe(self.testObserver.observer)
         let expectedResult = AppListSection(sectionIdentifier: "listing",
@@ -59,13 +58,10 @@ class AppListViewModelTests: XCTestCase {
     }
     
     func testFetchAppWithWrongURL() {
-        self.viewModel = AppListViewModel(appsRepository: CustomMockAppsRepository(fetchActionClosure: { _ -> SignalProducer<AppEntityResponse, APIError> in
+        self.viewModel = AppListViewModel(appsRepository: CustomMockAppsRepository(fetchActionClosure: { _ in
             return APIClient.requestWithModel(url: URL(string: "https://localhost/dummy_url.json")!, method: .get)
         }))
-        
-        let emptyResponse = AppEntityResponse.Feed(entry: [])
-        self.mockAppsRepository.mockData = AppEntityResponse(feed: emptyResponse)
-        
+
         let errorObserver = TestObserver<APIError?, Never>()
         self.viewModel.error.observe(errorObserver.observer)
         
@@ -75,12 +71,9 @@ class AppListViewModelTests: XCTestCase {
     }
     
     func testFetchAppWithWrongResponseFormat() {
-        self.viewModel = AppListViewModel(appsRepository: CustomMockAppsRepository(fetchActionClosure: { _ -> SignalProducer<AppEntityResponse, APIError> in
+        self.viewModel = AppListViewModel(appsRepository: CustomMockAppsRepository(fetchActionClosure: { _  in
             return APIClient.requestWithModel(url: URL(string: "https://itunes.apple.com/hk/rss/topfreeapplications/limit=10/xml")!, method: .get)
         }))
-        
-        let emptyResponse = AppEntityResponse.Feed(entry: [])
-        self.mockAppsRepository.mockData = AppEntityResponse(feed: emptyResponse)
         
         let errorObserver = TestObserver<APIError?, Never>()
         self.viewModel.error.observe(errorObserver.observer)

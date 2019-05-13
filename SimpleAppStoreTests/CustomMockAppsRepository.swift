@@ -16,17 +16,17 @@ class CustomMockAppsRepository: AppsRepositoryProtocol {
         case recommendation
     }
     
-    let fetchActionClosure: ((ActionType) -> SignalProducer<AppEntityResponse, APIError>)
+    let fetchActionClosure: ((ActionType) -> SignalProducer<AppDetailResponse, APIError>)
     
-    init(fetchActionClosure: @escaping ((ActionType) -> SignalProducer<AppEntityResponse, APIError>)) {
+    init(fetchActionClosure: @escaping ((ActionType) -> SignalProducer<AppDetailResponse, APIError>)) {
         self.fetchActionClosure = fetchActionClosure
     }
     
-    func getAppListing(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
-        return self.fetchActionClosure(.appListing)
+    func getAppListing(count: Int, offset: Int) -> SignalProducer<[App], APIError> {
+        return self.fetchActionClosure(.appListing).map { $0.results }
     }
     
-    func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<AppEntityResponse, APIError> {
-        return self.fetchActionClosure(.recommendation)
+    func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<[App], APIError> {
+        return self.fetchActionClosure(.recommendation).map { $0.results }
     }
 }

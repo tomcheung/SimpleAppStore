@@ -24,7 +24,7 @@ struct AppCellViewModel: Hashable {
     }
     
     init(app: App, order: Int) {
-        self.init(title: app.appName, subtitle: app.appCategory, order: order, imageURL: app.imageURL, isSkeletion: false)
+        self.init(title: app.appName, subtitle: app.appCategory, order: order, imageURL: app.appImageURL, isSkeletion: false)
     }
 
     static func skeletion(order: Int) -> AppCellViewModel {
