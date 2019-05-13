@@ -26,6 +26,7 @@
 		9C1385F42283245C00CCEC93 /* ReactiveAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385F32283245C00CCEC93 /* ReactiveAlamofire.swift */; };
 		9C1385F62283304100CCEC93 /* AppResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385F52283304100CCEC93 /* AppResponse.swift */; };
 		9C1385F82283315E00CCEC93 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1385F72283315E00CCEC93 /* App.swift */; };
+		9C1481252289DD2B0012A372 /* DatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1481242289DD2B0012A372 /* DatabaseTests.swift */; };
 		9C47EE172281BF0D00FC98D9 /* AppListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C47EE162281BF0D00FC98D9 /* AppListViewModel.swift */; };
 		9C47EE192281C3E100FC98D9 /* AppCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C47EE182281C3E100FC98D9 /* AppCellViewModel.swift */; };
 		9C4DBE252287D89300E564D2 /* TestObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C4DBE242287D89300E564D2 /* TestObserver.swift */; };
@@ -97,6 +98,7 @@
 		9C1385F32283245C00CCEC93 /* ReactiveAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveAlamofire.swift; sourceTree = "<group>"; };
 		9C1385F52283304100CCEC93 /* AppResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppResponse.swift; sourceTree = "<group>"; };
 		9C1385F72283315E00CCEC93 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		9C1481242289DD2B0012A372 /* DatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseTests.swift; sourceTree = "<group>"; };
 		9C47EE162281BF0D00FC98D9 /* AppListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListViewModel.swift; sourceTree = "<group>"; };
 		9C47EE182281C3E100FC98D9 /* AppCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCellViewModel.swift; sourceTree = "<group>"; };
 		9C4DBE242287D89300E564D2 /* TestObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObserver.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				9C06FE61228731FA00BFA282 /* APIParsingListingTests.swift */,
 				9C6111A22289776100A481B1 /* APIParsingAppDetailTests.swift */,
 				9C06FE65228736AB00BFA282 /* AppListViewModelTests.swift */,
+				9C1481242289DD2B0012A372 /* DatabaseTests.swift */,
 				9C06FE672287382600BFA282 /* MockDataAppsRepository.swift */,
 				9CADC06E2288676E00361A83 /* CustomMockAppsRepository.swift */,
 				9C4DBE242287D89300E564D2 /* TestObserver.swift */,
@@ -525,6 +528,7 @@
 				9C06FE6A228741B700BFA282 /* TestHelper.swift in Sources */,
 				9CADC06F2288676E00361A83 /* CustomMockAppsRepository.swift in Sources */,
 				9C6111A32289776100A481B1 /* APIParsingAppDetailTests.swift in Sources */,
+				9C1481252289DD2B0012A372 /* DatabaseTests.swift in Sources */,
 				9C4DBE252287D89300E564D2 /* TestObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

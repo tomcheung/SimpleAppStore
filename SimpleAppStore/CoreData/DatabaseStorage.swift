@@ -53,7 +53,7 @@ class DatabaseStorage {
     
     // MARK: - Core Data Saving support
     
-    private func saveContext () {
+    private func saveContext() {
         let context = persistentContainer.viewContext
         if context.hasChanges {
             do {
@@ -68,12 +68,21 @@ class DatabaseStorage {
     }
     
     private lazy var backgroundContext = self.persistentContainer.newBackgroundContext()
-    private var viewContext: NSManagedObjectContext {
+    var viewContext: NSManagedObjectContext {
         return self.persistentContainer.viewContext
     }
     
     
     // MARK: - Public function
+    func clearAllRecords(inBackground: Bool) throws {
+        let context = inBackground ? self.backgroundContext : self.viewContext
+        let fetchAppListingRequest: NSFetchRequest<AppEntity> = AppEntity.fetchRequest()
+        let items = try context.fetch(fetchAppListingRequest)
+        for item in items {
+            context.delete(item)
+        }
+    }
+    
     func fetchData(type: AppType, inBackground: Bool) throws -> [AppEntity] {
         let context = inBackground ? self.backgroundContext : self.viewContext
         let fetchAppListingRequest: NSFetchRequest<AppEntity> = AppEntity.fetchRequest()
@@ -94,13 +103,17 @@ class DatabaseStorage {
         }
         
         for app in appList {
-            let appEntity = AppEntity(context: self.backgroundContext)
+            let appEntity = AppEntity(context: context)
             appEntity.updateValue(from: app)
             appEntity.type = NSNumber(value: type.rawValue)
-            self.backgroundContext.insert(appEntity)
+            context.insert(appEntity)
         }
         
-        try self.backgroundContext.save()
+        if inBackground {
+            try self.backgroundContext.save()
+        } else {
+            self.saveContext()
+        }
         print("\(appList.count) \(type) records inserted")
     }
 
