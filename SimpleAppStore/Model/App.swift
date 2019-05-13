@@ -13,5 +13,6 @@ protocol App {
     var appCategory: String { get }
     var appImageURL: URL? { get }
     var appId: String { get }
-    var appRating: Decimal? { get }
+    var appRating: Double? { get }
+    var appUserRatingCount: Int? { get }
 }

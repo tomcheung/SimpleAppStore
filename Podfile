@@ -17,6 +17,7 @@ target 'SimpleAppStore' do
   
   shared_pods
   # Pods for SimpleAppStore
+  pod 'Cosmos', '~> 19.0'
   pod 'Alamofire', '~> 4.8'
   pod 'AlamofireNetworkActivityIndicator', '~> 2.4'
   pod 'SkeletonView'

@@ -9,11 +9,20 @@
 import Foundation
 
 extension AppEntity: App {
-    var appRating: Decimal? {
-        if let rating = self.rating {
-            return rating as Decimal
+    
+    var appRating: Double? {
+        if self.rating > 0 {
+            return self.rating
         } else {
             return nil
+        }
+    }
+    
+    var appUserRatingCount: Int? {
+        if self.userRatingCount == -1 {
+            return nil
+        } else {
+            return Int(self.userRatingCount)
         }
     }
     
@@ -42,5 +51,7 @@ extension AppEntity: App {
         self.name = app.appName
         self.category = app.appCategory
         self.imageURL = app.appImageURL?.absoluteString
+        self.rating = app.appRating ?? -1
+        self.userRatingCount = Int32(app.appUserRatingCount ?? -1)
     }
 }

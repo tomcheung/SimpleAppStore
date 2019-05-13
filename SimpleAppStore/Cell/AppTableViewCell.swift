@@ -9,6 +9,7 @@
 import UIKit
 import ReactiveSwift
 import ReactiveDataSource
+import Cosmos
 import Kingfisher
 
 class AppTableViewCell: ReactiveTableViewCell<AppListItem>, AppReuseView {
@@ -17,6 +18,8 @@ class AppTableViewCell: ReactiveTableViewCell<AppListItem>, AppReuseView {
     @IBOutlet var appImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var categoryLabel: UILabel!
+    @IBOutlet weak var ratingView: CosmosView!
+    @IBOutlet weak var numOfRatingLabel: UILabel!
     
     private var useCircleCorner: Bool = false {
         didSet {
@@ -48,7 +51,12 @@ class AppTableViewCell: ReactiveTableViewCell<AppListItem>, AppReuseView {
         self.useCircleCorner = appCellModel.order % 2 == 0
         self.appOrderLabel?.text = String(appCellModel.order)
         self.updateUI(appCellViewModel: appCellModel)
-       
+        self.ratingView.rating = appCellModel.rating ?? 0
+        if let ratingCount = appCellModel.ratingCount {
+            self.numOfRatingLabel.text = "(\(ratingCount))"
+        } else {
+            self.numOfRatingLabel.text = "(--)"
+        }
     }
     
 }

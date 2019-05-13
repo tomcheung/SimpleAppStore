@@ -13,22 +13,34 @@ struct AppCellViewModel: Hashable {
     let subtitle: String
     let order: Int
     let imageURL: URL?
+    let rating: Double?
+    let ratingCount: Int?
     var isSkeletion: Bool
     
-    init(title: String, subtitle: String, order: Int, imageURL: URL?, isSkeletion: Bool) {
+    init(title: String, subtitle: String, order: Int, imageURL: URL?, rating: Double?, ratingCount: Int?, isSkeletion: Bool) {
         self.title = title
         self.subtitle = subtitle
         self.order = order
         self.imageURL = imageURL
+        self.rating = rating
+        self.ratingCount = ratingCount
         self.isSkeletion = isSkeletion
     }
     
     init(app: App, order: Int) {
-        self.init(title: app.appName, subtitle: app.appCategory, order: order, imageURL: app.appImageURL, isSkeletion: false)
+        self.init(
+            title: app.appName,
+            subtitle: app.appCategory,
+            order: order,
+            imageURL: app.appImageURL,
+            rating: app.appRating,
+            ratingCount: app.appUserRatingCount,
+            isSkeletion: false
+        )
     }
 
     static func skeletion(order: Int) -> AppCellViewModel {
-        return AppCellViewModel(title: "", subtitle: "", order: order, imageURL: nil, isSkeletion: true)
+        return AppCellViewModel(title: "", subtitle: "", order: order, imageURL: nil, rating: nil, ratingCount: nil, isSkeletion: true)
     }
     
 }

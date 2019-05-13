@@ -2,6 +2,7 @@ PODS:
   - Alamofire (4.8.2)
   - AlamofireNetworkActivityIndicator (2.4.0):
     - Alamofire (~> 4.8)
+  - Cosmos (19.0.3)
   - FlexibleDiff (0.0.8)
   - Kingfisher (5.4.0)
   - Nimble (8.0.1)
@@ -13,6 +14,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.8)
   - AlamofireNetworkActivityIndicator (~> 2.4)
+  - Cosmos (~> 19.0)
   - FlexibleDiff
   - Kingfisher
   - Nimble (~> 8.0)
@@ -24,6 +26,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireNetworkActivityIndicator
+    - Cosmos
     - FlexibleDiff
     - Kingfisher
     - Nimble
@@ -34,6 +37,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  Cosmos: a6fb17284281fa12cf4c85c2efecd440a215ec44
   FlexibleDiff: 4f487778bd152088a9528a0a9be06eba7952bb00
   Kingfisher: 9c8f2cc6710334e06f32ba2b45e77707d5e2f0c9
   Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
@@ -41,6 +45,6 @@ SPEC CHECKSUMS:
   ReactiveSwift: 24b7ed245617bbfd30ee0c87779b6c64ac1b4518
   SkeletonView: 6cbb80f82f8bdee3f9093e2fa03b84819b4bd826
 
-PODFILE CHECKSUM: 58a1c704d24b445348a1f0a059699047e0b52c16
+PODFILE CHECKSUM: 82194ba363117a967e1087519e15c3576954a7dd
 
 COCOAPODS: 1.6.0

@@ -36,6 +36,8 @@ class AppListViewModelTests: XCTestCase {
                                                      subtitle: "新聞",
                                                      order: 1,
                                                      imageURL: URL(string: "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/f2/78/5f/f2785f53-f618-6126-45dc-1abb46c00ec9/source/100x100bb.jpg"),
+                                                     rating: 4.5,
+                                                     ratingCount: 38710,
                                                      isSkeletion: false)
         
         let expectedResult = AppListSection(sectionIdentifier: "listing", items: [.item(expectedCellViewModel), .item(AppCellViewModel.skeletion(order: 2))], headerItem: nil)
@@ -94,7 +96,7 @@ class AppListViewModelTests: XCTestCase {
             equal(AppListItem.item(AppCellViewModel.skeletion(order: 1))),
             timeout: 1)
         
-        expect(self.testObserver.lastValue?.last?.items.first).toEventuallyNot(beNil(), timeout: 1)
+        expect(self.testObserver.lastValue?.last?.items.first).toEventuallyNot(beNil(), timeout: 5)
     }
 
 }

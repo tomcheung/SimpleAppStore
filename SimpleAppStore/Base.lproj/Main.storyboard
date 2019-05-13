@@ -161,6 +161,25 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2j2-4E-MVg" customClass="CosmosView" customModule="Cosmos">
+                                                    <rect key="frame" x="146.5" y="55" width="95" height="15"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                            <real key="value" value="3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                            <real key="value" value="15"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKY-EX-pGr">
+                                                    <rect key="frame" x="249.5" y="55.5" width="17" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="qfc-ph-j33" firstAttribute="top" secondItem="I1x-J0-m4d" secondAttribute="bottom" constant="8" id="C9l-KK-f6k"/>
@@ -169,10 +188,14 @@
                                                 <constraint firstItem="I1x-J0-m4d" firstAttribute="top" secondItem="9jz-fQ-TvX" secondAttribute="top" constant="8" id="MXc-VB-Rb4"/>
                                                 <constraint firstItem="Nt1-3O-N9W" firstAttribute="leading" secondItem="9jz-fQ-TvX" secondAttribute="leadingMargin" constant="8" id="NL0-Vz-SVW"/>
                                                 <constraint firstItem="qfc-ph-j33" firstAttribute="leading" secondItem="I1x-J0-m4d" secondAttribute="leading" id="S22-zU-lBC"/>
+                                                <constraint firstItem="lKY-EX-pGr" firstAttribute="centerY" secondItem="2j2-4E-MVg" secondAttribute="centerY" id="TXv-fX-vAZ"/>
                                                 <constraint firstItem="BvZ-ST-whR" firstAttribute="top" secondItem="9jz-fQ-TvX" secondAttribute="top" constant="8" id="adv-tU-grD"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qfc-ph-j33" secondAttribute="trailing" constant="20" symbolic="YES" id="b3a-Li-IZd"/>
+                                                <constraint firstItem="2j2-4E-MVg" firstAttribute="top" secondItem="qfc-ph-j33" secondAttribute="bottom" constant="8" id="b3z-nd-6dx"/>
                                                 <constraint firstItem="BvZ-ST-whR" firstAttribute="leading" secondItem="Nt1-3O-N9W" secondAttribute="trailing" constant="8" id="cuM-O2-gvY"/>
+                                                <constraint firstItem="lKY-EX-pGr" firstAttribute="leading" secondItem="2j2-4E-MVg" secondAttribute="trailing" constant="8" id="dRr-Me-E4w"/>
                                                 <constraint firstItem="Nt1-3O-N9W" firstAttribute="centerY" secondItem="9jz-fQ-TvX" secondAttribute="centerY" id="dit-00-xyu"/>
+                                                <constraint firstItem="2j2-4E-MVg" firstAttribute="leading" secondItem="qfc-ph-j33" secondAttribute="leading" id="mCU-MP-TP6"/>
                                                 <constraint firstItem="BvZ-ST-whR" firstAttribute="centerY" secondItem="9jz-fQ-TvX" secondAttribute="centerY" id="oI4-23-ujA"/>
                                                 <constraint firstItem="BvZ-ST-whR" firstAttribute="width" secondItem="BvZ-ST-whR" secondAttribute="height" id="r0Q-0L-XDj"/>
                                             </constraints>
@@ -180,7 +203,9 @@
                                         <connections>
                                             <outlet property="appImageView" destination="BvZ-ST-whR" id="F4R-w5-9ea"/>
                                             <outlet property="appOrderLabel" destination="Nt1-3O-N9W" id="3iC-KH-uaU"/>
-                                            <outlet property="categoryLabel" destination="qfc-ph-j33" id="Ivu-jC-7t3"/>
+                                            <outlet property="categoryLabel" destination="qfc-ph-j33" id="4vi-hv-biT"/>
+                                            <outlet property="numOfRatingLabel" destination="lKY-EX-pGr" id="gSC-O3-3rh"/>
+                                            <outlet property="ratingView" destination="2j2-4E-MVg" id="eh9-gD-ANv"/>
                                             <outlet property="titleLabel" destination="I1x-J0-m4d" id="GQK-qC-RXZ"/>
                                         </connections>
                                     </tableViewCell>

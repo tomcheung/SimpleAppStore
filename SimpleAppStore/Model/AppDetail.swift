@@ -19,7 +19,7 @@ struct AppDetail: Codable {
     let artworkUrl60: String
     let artworkUrl100: String
     let genres: [String]
-    let averageUserRating: Decimal?
+    let averageUserRating: Double?
     let userRatingCount: Int?
 }
 
@@ -41,7 +41,11 @@ extension AppDetail: App {
         return String(self.trackId)
     }
     
-    var appRating: Decimal? {
+    var appRating: Double? {
         return self.averageUserRating
+    }
+    
+    var appUserRatingCount: Int? {
+        return self.userRatingCount
     }
 }

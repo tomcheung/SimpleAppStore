@@ -28,7 +28,7 @@ struct AppEntityResponse: Codable {
         let image: [LabelAttributes]
         let category: Category
         let id: LabelAttributes
-        var rating: Decimal?
+        var rating: Double?
         
         var appId: String {
             let id = self.id.attributes?["im:id"]
