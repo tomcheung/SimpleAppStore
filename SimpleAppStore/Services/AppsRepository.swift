@@ -30,10 +30,16 @@ class AppsRepository: AppsRepositoryProtocol {
                 }
             })
 
-        return api.flatMapError { (apiError) -> SignalProducer<[App], APIError> in
-            // If api failure, return cached value from database if exist
-            return AppsRepository.fallbackFetchDatabaseResult(apiError: apiError, type: .appListing)
+        // For load more case, it should not return cacheed db data
+        if offset == 0 {
+            return api.flatMapError { (apiError) -> SignalProducer<[App], APIError> in
+                // If api failure, return cached value from database if exist
+                return AppsRepository.fallbackFetchDatabaseResult(apiError: apiError, type: .appListing)
+            }
+        } else {
+            return api
         }
+        
     }
     
     func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<[App], APIError> {
@@ -47,9 +53,13 @@ class AppsRepository: AppsRepositoryProtocol {
                 }
             })
         
-        return api.flatMapError { (apiError) -> SignalProducer<[App], APIError> in
-            // If api failure, return cached value from database if exist
-            return AppsRepository.fallbackFetchDatabaseResult(apiError: apiError, type: .appRecommendation)
+        if offset == 0 {
+            return api.flatMapError { (apiError) -> SignalProducer<[App], APIError> in
+                // If api failure, return cached value from database if exist
+                return AppsRepository.fallbackFetchDatabaseResult(apiError: apiError, type: .appRecommendation)
+            }
+        } else {
+            return api
         }
     }
     
