@@ -18,7 +18,7 @@ class ReactiveAlamofire {
         return SessionManager(configuration: urlConfiguration)
     }()
     
-    // No any instance function in this class
+    // No any instance function in this class, so we prevent construct instance in this class
     private init() { }
     
     static func responseJSON(url: URL, method: HTTPMethod, param: [String: Any]?) -> SignalProducer<Any, Error> {

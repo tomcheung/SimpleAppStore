@@ -14,6 +14,9 @@ protocol AppsRepositoryProtocol {
     func getAppRecommendation(count: Int, offset: Int) -> SignalProducer<[App], APIError>
 }
 
+/// A repository to manage data from both api and database
+/// It will call the network to fetch, and store data into database, if network fail, it will query the database and return cached (return error if cache not avalible)
+/// All ViewModel should access data thougth this class instead of interact data with APIClient / Database directly
 class AppsRepository: AppsRepositoryProtocol {
     
     static let shared = AppsRepository()
