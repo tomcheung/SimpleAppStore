@@ -13,7 +13,6 @@ import ReactiveDataSource
 class AppRecommendationTableViewCell: ReactiveTableViewCell<AppListItem> {
     @IBOutlet var recommendationCollectionView: UICollectionView!
     private let recommendationDataSrouce = ReactiveCollectionViewDataSource<AppListSection>()
-    private var collectionFlowLayout: UICollectionViewFlowLayout?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +22,6 @@ class AppRecommendationTableViewCell: ReactiveTableViewCell<AppListItem> {
     private func setupCollectionView() {
         self.recommendationDataSrouce.reuseIdentifier = { _ in "appCell" }
         self.recommendationCollectionView.reactive.setReactiveDataSource(self.recommendationDataSrouce)
-        self.collectionFlowLayout = self.recommendationCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
     }
     
     override func bind(viewModel: AppListItem, disposable: CompositeDisposable) {
