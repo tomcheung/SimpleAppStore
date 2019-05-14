@@ -87,10 +87,11 @@ class DatabaseStorage {
         let context = inBackground ? self.backgroundContext : self.viewContext
         let fetchAppListingRequest: NSFetchRequest<AppEntity> = AppEntity.fetchRequest()
         fetchAppListingRequest.predicate = NSPredicate(format: "type == %i", type.rawValue)
+        fetchAppListingRequest.sortDescriptors = [NSSortDescriptor(key: "order", ascending: true)]
         return try context.fetch(fetchAppListingRequest)
     }
     
-    func saveData(appList: [App], type: AppType, clearPreviousRecords: Bool, inBackground: Bool) throws {
+    func saveData(appList: [App], type: AppType, clearPreviousRecords: Bool, inBackground: Bool, offset: Int) throws {
         let context = inBackground ? self.backgroundContext : self.viewContext
         
         if clearPreviousRecords {
@@ -102,10 +103,11 @@ class DatabaseStorage {
             print("Remove \(items.count) old \(type) records")
         }
         
-        for app in appList {
+        for (index, app) in appList.enumerated() {
             let appEntity = AppEntity(context: context)
             appEntity.updateValue(from: app)
             appEntity.type = NSNumber(value: type.rawValue)
+            appEntity.order = Int32(offset + index)
             context.insert(appEntity)
         }
         

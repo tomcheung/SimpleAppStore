@@ -24,7 +24,7 @@ class AppsRepository: AppsRepositoryProtocol {
             .flatMap(.concat, AppsRepository.fetchAppDetails)
             .on(value: { result in
                 do {
-                    try DatabaseStorage.shared.saveData(appList: result, type: .appListing, clearPreviousRecords: (offset == 0), inBackground: true)
+                    try DatabaseStorage.shared.saveData(appList: result, type: .appListing, clearPreviousRecords: (offset == 0), inBackground: true, offset: offset)
                 } catch {
                     print("Save app listing to database fail: \(error)")
                 }
@@ -47,7 +47,7 @@ class AppsRepository: AppsRepositoryProtocol {
             .flatMap(.concat, AppsRepository.fetchAppDetails)
             .on(value: { result in
                 do {
-                    try DatabaseStorage.shared.saveData(appList: result, type: .appRecommendation, clearPreviousRecords: (offset == 0), inBackground: true)
+                    try DatabaseStorage.shared.saveData(appList: result, type: .appRecommendation, clearPreviousRecords: (offset == 0), inBackground: true, offset: offset)
                 } catch {
                     print("Save app recommendation to database fail: \(error)")
                 }

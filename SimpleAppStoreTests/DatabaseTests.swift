@@ -27,7 +27,7 @@ class DatabaseTests: XCTestCase {
         let appDetailResposne = try! TestHelper.loadSampleResponse(jsonFile: "MockResponse")
         
         expect {
-            try db.saveData(appList: appDetailResposne.results, type: .appListing, clearPreviousRecords: true, inBackground: false)
+            try db.saveData(appList: appDetailResposne.results, type: .appListing, clearPreviousRecords: true, inBackground: false, offset: 0)
         }.notTo(throwError())
         
         expect { () -> String? in
@@ -38,16 +38,24 @@ class DatabaseTests: XCTestCase {
     
     func testDbModelMapping() {
         let appDetailResposne = try! TestHelper.loadSampleResponse(jsonFile: "MockResponse")
-        let mockAppDetail = appDetailResposne.results.first!
-        let appEntity = AppEntity(context: DatabaseStorage.shared.viewContext)
+        assert(!appDetailResposne.results.isEmpty)
         
-        appEntity.updateValue(from: mockAppDetail)
-        expect(appEntity.appId).to(equal(mockAppDetail.appId))
-        expect(appEntity.appName).to(equal(mockAppDetail.appName))
-        expect(appEntity.appCategory).to(equal(mockAppDetail.appCategory))
-        expect(appEntity.appRating).to(equal(mockAppDetail.appRating))
-        expect(appEntity.appUserRatingCount).to(equal(mockAppDetail.appUserRatingCount))
-        expect(appEntity.appImageURL).to(equal(mockAppDetail.appImageURL))
+        for mockAppDetail in appDetailResposne.results {
+            let appEntity = AppEntity(context: DatabaseStorage.shared.viewContext)
+            
+            appEntity.updateValue(from: mockAppDetail)
+            expect(appEntity.appId).to(equal(mockAppDetail.appId))
+            expect(appEntity.appName).to(equal(mockAppDetail.appName))
+            expect(appEntity.appCategory).to(equal(mockAppDetail.appCategory))
+            if mockAppDetail.appRating == nil {
+                expect(appEntity.appRating).to(beNil())
+                expect(appEntity.appUserRatingCount).to(beNil())
+            } else {
+                expect(appEntity.appRating).to(equal(mockAppDetail.appRating))
+                expect(appEntity.appUserRatingCount).to(equal(mockAppDetail.appUserRatingCount))
+            }
+            expect(appEntity.appImageURL).to(equal(mockAppDetail.appImageURL))
+        }
     }
 
 }

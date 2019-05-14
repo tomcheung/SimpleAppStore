@@ -29,18 +29,27 @@ class AppListViewModelTests: XCTestCase {
     }
 
     func testFetchMockAppListingData() {
-        self.viewModel.fetchAppList()
         self.viewModel.sections.signal.observe(self.testObserver.observer)
         
-        let expectedCellViewModel = AppCellViewModel(title: "香港01",
-                                                     subtitle: "新聞",
-                                                     order: 1,
-                                                     imageURL: URL(string: "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/f2/78/5f/f2785f53-f618-6126-45dc-1abb46c00ec9/source/100x100bb.jpg"),
-                                                     rating: 4.5,
-                                                     ratingCount: 38710,
-                                                     isSkeletion: false)
+        let expectedCellViewModel: [AppCellViewModel] = [
+            AppCellViewModel(title: "香港01",
+                             subtitle: "新聞",
+                             order: 1,
+                             imageURL: URL(string: "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/f2/78/5f/f2785f53-f618-6126-45dc-1abb46c00ec9/source/100x100bb.jpg"),
+                             rating: 4.5,
+                             ratingCount: 38710,
+                             isSkeletion: false),
+            AppCellViewModel(title: "五色學倉頡 ONLINE",
+                             subtitle: "教育",
+                             order: 2,
+                             imageURL: URL(string: "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/6a/92/3b/6a923b7a-14e0-fca4-dd68-ecd3a4dc0bec/source/100x100bb.jpg"),
+                             rating: nil,
+                             ratingCount: nil,
+                             isSkeletion: false),
+            AppCellViewModel.skeletion(order: 3) // Load more indicator
+        ]
         
-        let expectedResult = AppListSection(sectionIdentifier: "listing", items: [.item(expectedCellViewModel), .item(AppCellViewModel.skeletion(order: 2))], headerItem: nil)
+        let expectedResult = AppListSection(sectionIdentifier: "listing", items: expectedCellViewModel.map { AppListItem.item($0) }, headerItem: nil)
         self.viewModel.fetchAppList()
         
         // Only compare last section (App Listing)
