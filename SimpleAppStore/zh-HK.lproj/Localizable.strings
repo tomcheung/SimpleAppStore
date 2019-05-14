@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SimpleAppStore
+
+  Created by Cheung Chun Hung on 14/5/2019.
+  Copyright © 2019 Cheung Chun Hung. All rights reserved.
+*/
+
+"no_result" = "沒有結果";
+"no_search_result_app_listing" = "找不到相關的 App 清單的搜尋結果";
+"no_search_result_app_recommendation" = "找不到相關的 App 建議的搜尋結果";

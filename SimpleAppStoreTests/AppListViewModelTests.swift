@@ -61,7 +61,7 @@ class AppListViewModelTests: XCTestCase {
         
         self.viewModel.sections.signal.observe(self.testObserver.observer)
         let expectedResult = AppListSection(sectionIdentifier: "listing",
-                                            items: [.message(ErrorMessageCellViewModel(errorMessage: "No Result", cellHeight: AppListViewController.Style.appListingRowHeight))],
+                                            items: [.message(ErrorMessageCellViewModel(errorMessage: "no_result".localized, cellHeight: AppListViewController.Style.appListingRowHeight))],
                                             headerItem: nil)
 
         self.viewModel.fetchAppList()

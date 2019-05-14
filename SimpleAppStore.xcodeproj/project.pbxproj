@@ -44,6 +44,8 @@
 		9C91315422807CC300658D7E /* ReactiveDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C91315222807CBC00658D7E /* ReactiveDataSource.framework */; };
 		9C91315522807CC300658D7E /* ReactiveDataSource.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C91315222807CBC00658D7E /* ReactiveDataSource.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9CADC06F2288676E00361A83 /* CustomMockAppsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CADC06E2288676E00361A83 /* CustomMockAppsRepository.swift */; };
+		9CE36F9F228B019C00E7DE05 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE36F9E228B019C00E7DE05 /* String+Localized.swift */; };
+		9CE36FA0228B02B100E7DE05 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9CE36FA2228B02B100E7DE05 /* Localizable.strings */; };
 		B2CF34949BC5892978940E96 /* Pods_SimpleAppStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3DE1E7F594A5113881CD253 /* Pods_SimpleAppStore.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +119,10 @@
 		9C91315022807CAC00658D7E /* AppListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppListSection.swift; sourceTree = "<group>"; };
 		9C91315222807CBC00658D7E /* ReactiveDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CADC06E2288676E00361A83 /* CustomMockAppsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMockAppsRepository.swift; sourceTree = "<group>"; };
+		9CE36F9B228B007B00E7DE05 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Main.strings"; sourceTree = "<group>"; };
+		9CE36F9E228B019C00E7DE05 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		9CE36FA1228B02B100E7DE05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9CE36FA3228B02BA00E7DE05 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A4A9932288D67C2B92899A63 /* Pods_SimpleAppStore_SimpleAppStoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleAppStore_SimpleAppStoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97BD1BEE90FEADD44353D76 /* Pods-SimpleAppStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAppStore.debug.xcconfig"; path = "Target Support Files/Pods-SimpleAppStore/Pods-SimpleAppStore.debug.xcconfig"; sourceTree = "<group>"; };
 		CC21955091745CCE3DB842EC /* Pods-SimpleAppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleAppStore.release.xcconfig"; path = "Target Support Files/Pods-SimpleAppStore/Pods-SimpleAppStore.release.xcconfig"; sourceTree = "<group>"; };
@@ -243,6 +249,8 @@
 				9C91313622806EF800658D7E /* Assets.xcassets */,
 				9C91313822806EF800658D7E /* LaunchScreen.storyboard */,
 				9C91313B22806EF800658D7E /* Info.plist */,
+				9CE36FA2228B02B100E7DE05 /* Localizable.strings */,
+				9CE36F9E228B019C00E7DE05 /* String+Localized.swift */,
 			);
 			path = SimpleAppStore;
 			sourceTree = "<group>";
@@ -361,6 +369,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-HK",
 			);
 			mainGroup = 9C91312322806EF700658D7E;
 			productRefGroup = 9C91312D22806EF700658D7E /* Products */;
@@ -388,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE36FA0228B02B100E7DE05 /* Localizable.strings in Resources */,
 				9C91313A22806EF800658D7E /* LaunchScreen.storyboard in Resources */,
 				9C91313722806EF800658D7E /* Assets.xcassets in Resources */,
 				9C91313522806EF700658D7E /* Main.storyboard in Resources */,
@@ -555,6 +565,7 @@
 				9C06FE5D2286D4A500BFA282 /* ErrorMessageTableViewCell.swift in Sources */,
 				9C61119922894D5F00A481B1 /* AppDatabaseModel.xcdatamodeld in Sources */,
 				9C1385EE2283118B00CCEC93 /* APIClient.swift in Sources */,
+				9CE36F9F228B019C00E7DE05 /* String+Localized.swift in Sources */,
 				9C06FE502285756F00BFA282 /* AppTableViewCell.swift in Sources */,
 				9C06FE582285E2D500BFA282 /* AppReuseView.swift in Sources */,
 			);
@@ -575,6 +586,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9C91313422806EF700658D7E /* Base */,
+				9CE36F9B228B007B00E7DE05 /* zh-HK */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -585,6 +597,15 @@
 				9C91313922806EF800658D7E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9CE36FA2228B02B100E7DE05 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CE36FA1228B02B100E7DE05 /* en */,
+				9CE36FA3228B02BA00E7DE05 /* zh-HK */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -639,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -700,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

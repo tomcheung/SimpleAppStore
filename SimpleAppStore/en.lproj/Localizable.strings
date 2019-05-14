@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SimpleAppStore
+
+  Created by Cheung Chun Hung on 14/5/2019.
+  Copyright © 2019 Cheung Chun Hung. All rights reserved.
+*/
+
+"no_result" = "No result";
+"no_search_result_app_listing" = "No serach result on app listing";
+"no_search_result_app_recommendation" = "No serach result on app recommendation";

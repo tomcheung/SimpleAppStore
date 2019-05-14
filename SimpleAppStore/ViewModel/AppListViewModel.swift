@@ -114,14 +114,14 @@ class AppListViewModel {
 
         let appRecommendationListItem: [AppListItem] = filteredAppRecommendation.isEmpty
             ? [AppListItem.message(
-                ErrorMessageCellViewModel(errorMessage: (keyword == nil) ? "No Result" : "No serach result on app recommendation",
+                ErrorMessageCellViewModel(errorMessage: (keyword == nil) ? "no_result".localized : "no_search_result_app_recommendation".localized,
                                           cellHeight: AppListViewController.Style.appRecommendationRowHeight))
               ]
             : [AppListItem.list(filteredAppRecommendation)]
         
         var appListItem: [AppListItem] = filteredAppsList.isEmpty
             ? [AppListItem.message(
-                ErrorMessageCellViewModel(errorMessage: (keyword == nil) ? "No Result" : "No serach result on app listing",
+                ErrorMessageCellViewModel(errorMessage: (keyword == nil) ? "no_result".localized : "no_search_result_app_listing".localized,
                                           cellHeight: AppListViewController.Style.appListingRowHeight))
               ]
             : filteredAppsList.map { AppListItem.item($0) }
@@ -135,7 +135,7 @@ class AppListViewModel {
             AppListSection(
                 sectionIdentifier: "recommendation",
                 items: appRecommendationListItem,
-                headerItem: "Recommendation"
+                headerItem: nil
             ),
             AppListSection(
                 sectionIdentifier: "listing",

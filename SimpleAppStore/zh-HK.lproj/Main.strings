@@ -1,0 +1,33 @@
+
+/* Class = "UIButton"; normalTitle = "Retry"; ObjectID = "3VW-P9-Yd5"; */
+"3VW-P9-Yd5.normalTitle" = "重試";
+
+/* Class = "UILabel"; text = "Recommendation"; ObjectID = "7BA-QW-dTl"; */
+"7BA-QW-dTl.text" = "推介";
+
+/* Class = "UILabel"; text = "[Error Message]"; ObjectID = "7ah-I5-O2h"; */
+"7ah-I5-O2h.text" = "[Error Message]";
+
+/* Class = "UILabel"; text = "[App name title]"; ObjectID = "Hpe-CG-YEf"; */
+"Hpe-CG-YEf.text" = "[App name title]";
+
+/* Class = "UILabel"; text = "[App name]"; ObjectID = "I1x-J0-m4d"; */
+"I1x-J0-m4d.text" = "[App name]";
+
+/* Class = "UILabel"; text = "[Error message]"; ObjectID = "J3Y-fN-SiJ"; */
+"J3Y-fN-SiJ.text" = "[Error message]";
+
+/* Class = "UISearchBar"; placeholder = "Search"; ObjectID = "Mmk-t0-uoa"; */
+"Mmk-t0-uoa.placeholder" = "搜尋";
+
+/* Class = "UILabel"; text = "10"; ObjectID = "Nt1-3O-N9W"; */
+"Nt1-3O-N9W.text" = "10";
+
+/* Class = "UILabel"; text = "[Category]"; ObjectID = "geo-pA-WFO"; */
+"geo-pA-WFO.text" = "[Category]";
+
+/* Class = "UILabel"; text = "(0)"; ObjectID = "lKY-EX-pGr"; */
+"lKY-EX-pGr.text" = "(0)";
+
+/* Class = "UILabel"; text = "[Category]"; ObjectID = "qfc-ph-j33"; */
+"qfc-ph-j33.text" = "[Category]";
